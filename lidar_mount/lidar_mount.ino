@@ -1,5 +1,5 @@
 /*
- * Reading of encoder for scratch lidar mount.
+ * Reading of encoder.
  * 
  * Protocols are based on the datasheet for the CUI-AMT20 which
  * can be found at: http://www.cui.com/product/resource/amt20-v.pdf
@@ -39,6 +39,13 @@ void setup()
   
   // Allow time for initialization.
   delay(100);
+
+  // Print welcome message and instructions.
+  Serial.println("This module is to test the encoders.");
+  Serial.println("Enter commands (without quotes) to perform actions.");
+  Serial.println("Availlable Commands:");
+  Serial.println("- `init` : Zeros the encoders.");
+  Serial.println("- `read` : Read the value from the encoders.");
 }
 
 
@@ -95,9 +102,14 @@ void end_transaction()
 /*
  * Thes particular encoder requires that we release the slave select line
  * every time we transmit a byte.
+ * 
+ * Also from the spec: "It is recommended that the master leave a 20
+ * microsecond delay between reads to avoid extending the read time
+ * by forcing wait sequences.
  */
 void release_ss()
 {
+  delayMicroseconds(20);
   digitalWrite(CHIP_SEL_PIN, HIGH);
   digitalWrite(CHIP_SEL_PIN, LOW);
 }
@@ -126,15 +138,11 @@ void set_zero_point()
   // is an acknowledgement that the encoder has been zeroed.
   while (ack != 0x80)
   {
-    if (count % 10000 == 0){
-      Serial.println(ack);
-    }
     release_ss();
     ack = SPI.transfer(NOP_A5);
     count++;
   }
 
-  Serial.println(ack);
   end_transaction();
 }
 
