@@ -1,17 +1,17 @@
 ******************************************************************************
                   TI ARM Linker PC v16.6.0                     
 ******************************************************************************
->> Linked Mon Jan 23 17:07:22 2017
+>> Linked Mon Jan 23 23:30:34 2017
 
 OUTPUT FILE NAME:   <Quadrature_Encoder_Reading.out>
-ENTRY POINT SYMBOL: "_c_int00"  address: 00000875
+ENTRY POINT SYMBOL: "_c_int00"  address: 0000086d
 
 
 MEMORY CONFIGURATION
 
          name            origin    length      used     unused   attr    fill
 ----------------------  --------  ---------  --------  --------  ----  --------
-  FLASH                 00000000   00040000  00000e6c  0003f194  R  X
+  FLASH                 00000000   00040000  00000e64  0003f19c  R  X
   SRAM                  20000000   00008000  00000224  00007ddc  RW X
 
 
@@ -19,11 +19,11 @@ SEGMENT ALLOCATION MAP
 
 run origin  load origin   length   init length attrs members
 ----------  ----------- ---------- ----------- ----- -------
-00000000    00000000    00000e70   00000e70    r-x
+00000000    00000000    00000e68   00000e68    r-x
   00000000    00000000    0000026c   0000026c    r-- .intvecs
-  0000026c    0000026c    000008e4   000008e4    r-x .text
-  00000b50    00000b50    000002e4   000002e4    r-- .const
-  00000e38    00000e38    00000038   00000038    r-- .cinit
+  0000026c    0000026c    000008dc   000008dc    r-x .text
+  00000b48    00000b48    000002e4   000002e4    r-- .const
+  00000e30    00000e30    00000038   00000038    r-- .cinit
 20000000    20000000    00000224   00000000    rw-
   20000000    20000000    00000200   00000000    rw- .stack
   20000200    20000200    00000018   00000000    rw- .data
@@ -38,59 +38,59 @@ section   page    origin      length       input sections
 .intvecs   0    00000000    0000026c     
                   00000000    0000026c     tm4c123gh6pm_startup_ccs.obj (.intvecs)
 
-.text      0    0000026c    000008e4     
+.text      0    0000026c    000008dc     
                   0000026c    000001ec     driverlib.lib : sysctl.obj (.text:SysCtlClockFreqSet)
                   00000458    00000132                   : gpio.obj (.text:GPIOPadConfigSet)
                   0000058a    00000002     rtsv7M4_T_le_v4SPD16_eabi.lib : mpu_init.obj (.text)
-                  0000058c    000000f8     main.obj (.text)
-                  00000684    0000009c     rtsv7M4_T_le_v4SPD16_eabi.lib : memcpy_t2.obj (.text)
-                  00000720    0000007a                                   : memset_t2.obj (.text)
-                  0000079a    00000002                                   : startup.obj (.text)
-                  0000079c    00000070                                   : autoinit.obj (.text)
-                  0000080c    00000066                                   : copy_decompress_lzss.obj (.text:decompress:lzss)
-                  00000872    00000002     --HOLE-- [fill = 0]
-                  00000874    00000054                                   : boot.obj (.text)
-                  000008c8    00000054                                   : exit.obj (.text)
-                  0000091c    0000004c                                   : cpy_tbl.obj (.text)
-                  00000968    00000048     driverlib.lib : gpio.obj (.text:GPIOPinConfigure)
-                  000009b0    00000048                   : sysctl.obj (.text:_SysCtlFrequencyGet)
-                  000009f8    00000034                   : sysctl.obj (.text:SysCtlPeripheralEnable)
-                  00000a2c    0000002a                   : gpio.obj (.text:GPIODirModeSet)
-                  00000a56    00000002     --HOLE-- [fill = 0]
-                  00000a58    00000020                   : sysctl.obj (.text:_SysCtlMemTimingGet)
-                  00000a78    00000018     rtsv7M4_T_le_v4SPD16_eabi.lib : args_main.obj (.text)
-                  00000a90    00000014                                   : _lock.obj (.text)
-                  00000aa4    00000012     driverlib.lib : gpio.obj (.text:GPIOPinTypeQEI)
-                  00000ab6    00000010                   : qei.obj (.text:QEIVelocityConfigure)
-                  00000ac6    0000000e                   : qei.obj (.text:QEIConfigure)
-                  00000ad4    0000000e                   : qei.obj (.text:QEIDirectionGet)
-                  00000ae2    0000000e     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_none.obj (.text:decompress:none)
-                  00000af0    0000000c                                   : copy_zero_init.obj (.text:decompress:ZI)
-                  00000afc    0000000c     tm4c123gh6pm_startup_ccs.obj (.text)
-                  00000b08    0000000a     driverlib.lib : qei.obj (.text:QEIDisable)
-                  00000b12    0000000a                   : qei.obj (.text:QEIEnable)
-                  00000b1c    0000000a                   : qei.obj (.text:QEIIntDisable)
-                  00000b26    0000000a                   : qei.obj (.text:QEIVelocityDisable)
-                  00000b30    0000000a                   : qei.obj (.text:QEIVelocityEnable)
-                  00000b3a    00000006                   : sysctl.obj (.text:SysCtlDelay)
-                  00000b40    00000004                   : qei.obj (.text:QEIPositionGet)
-                  00000b44    00000004                   : qei.obj (.text:QEIPositionSet)
-                  00000b48    00000004                   : qei.obj (.text:QEIVelocityGet)
-                  00000b4c    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : pre_init.obj (.text)
+                  0000058c    000000f0     main.obj (.text)
+                  0000067c    0000009c     rtsv7M4_T_le_v4SPD16_eabi.lib : memcpy_t2.obj (.text)
+                  00000718    0000007a                                   : memset_t2.obj (.text)
+                  00000792    00000002                                   : startup.obj (.text)
+                  00000794    00000070                                   : autoinit.obj (.text)
+                  00000804    00000066                                   : copy_decompress_lzss.obj (.text:decompress:lzss)
+                  0000086a    00000002     --HOLE-- [fill = 0]
+                  0000086c    00000054                                   : boot.obj (.text)
+                  000008c0    00000054                                   : exit.obj (.text)
+                  00000914    0000004c                                   : cpy_tbl.obj (.text)
+                  00000960    00000048     driverlib.lib : gpio.obj (.text:GPIOPinConfigure)
+                  000009a8    00000048                   : sysctl.obj (.text:_SysCtlFrequencyGet)
+                  000009f0    00000034                   : sysctl.obj (.text:SysCtlPeripheralEnable)
+                  00000a24    0000002a                   : gpio.obj (.text:GPIODirModeSet)
+                  00000a4e    00000002     --HOLE-- [fill = 0]
+                  00000a50    00000020                   : sysctl.obj (.text:_SysCtlMemTimingGet)
+                  00000a70    00000018     rtsv7M4_T_le_v4SPD16_eabi.lib : args_main.obj (.text)
+                  00000a88    00000014                                   : _lock.obj (.text)
+                  00000a9c    00000012     driverlib.lib : gpio.obj (.text:GPIOPinTypeQEI)
+                  00000aae    00000010                   : qei.obj (.text:QEIVelocityConfigure)
+                  00000abe    0000000e                   : qei.obj (.text:QEIConfigure)
+                  00000acc    0000000e                   : qei.obj (.text:QEIDirectionGet)
+                  00000ada    0000000e     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_none.obj (.text:decompress:none)
+                  00000ae8    0000000c                                   : copy_zero_init.obj (.text:decompress:ZI)
+                  00000af4    0000000c     tm4c123gh6pm_startup_ccs.obj (.text)
+                  00000b00    0000000a     driverlib.lib : qei.obj (.text:QEIDisable)
+                  00000b0a    0000000a                   : qei.obj (.text:QEIEnable)
+                  00000b14    0000000a                   : qei.obj (.text:QEIIntDisable)
+                  00000b1e    0000000a                   : qei.obj (.text:QEIVelocityDisable)
+                  00000b28    0000000a                   : qei.obj (.text:QEIVelocityEnable)
+                  00000b32    00000006                   : sysctl.obj (.text:SysCtlDelay)
+                  00000b38    00000004                   : qei.obj (.text:QEIPositionGet)
+                  00000b3c    00000004                   : qei.obj (.text:QEIPositionSet)
+                  00000b40    00000004                   : qei.obj (.text:QEIVelocityGet)
+                  00000b44    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : pre_init.obj (.text)
 
-.const     0    00000b50    000002e4     
-                  00000b50    000001b0     driverlib.lib : sysctl.obj (.const:g_pppui32XTALtoVCO)
-                  00000d00    00000090                   : gpio.obj (.const:g_pui32GPIOBaseAddrs)
-                  00000d90    0000006c                   : sysctl.obj (.const:g_pui32Xtals)
-                  00000dfc    00000030                   : sysctl.obj (.const:g_sXTALtoMEMTIM)
-                  00000e2c    00000008                   : sysctl.obj (.const)
+.const     0    00000b48    000002e4     
+                  00000b48    000001b0     driverlib.lib : sysctl.obj (.const:g_pppui32XTALtoVCO)
+                  00000cf8    00000090                   : gpio.obj (.const:g_pui32GPIOBaseAddrs)
+                  00000d88    0000006c                   : sysctl.obj (.const:g_pui32Xtals)
+                  00000df4    00000030                   : sysctl.obj (.const:g_sXTALtoMEMTIM)
+                  00000e24    00000008                   : sysctl.obj (.const)
 
-.cinit     0    00000e38    00000038     
-                  00000e38    00000011     (.cinit..data.load) [load image, compression = lzss]
-                  00000e49    00000003     --HOLE-- [fill = 0]
-                  00000e4c    0000000c     (__TI_handler_table)
-                  00000e58    00000008     (.cinit..bss.load) [load image, compression = zero_init]
-                  00000e60    00000010     (__TI_cinit_table)
+.cinit     0    00000e30    00000038     
+                  00000e30    00000011     (.cinit..data.load) [load image, compression = lzss]
+                  00000e41    00000003     --HOLE-- [fill = 0]
+                  00000e44    0000000c     (__TI_handler_table)
+                  00000e50    00000008     (.cinit..bss.load) [load image, compression = zero_init]
+                  00000e58    00000010     (__TI_cinit_table)
 
 .init_array 
 *          0    00000000    00000000     UNINITIALIZED
@@ -114,9 +114,9 @@ MODULE SUMMARY
        ------                         ----   -------   -------
     .\
        tm4c123gh6pm_startup_ccs.obj   12     620       0      
-       main.obj                       248    0         12     
+       main.obj                       240    0         12     
     +--+------------------------------+------+---------+---------+
-       Total:                         260    620       12     
+       Total:                         252    620       12     
                                                               
     C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib
        sysctl.obj                     654    596       0      
@@ -147,19 +147,19 @@ MODULE SUMMARY
        Stack:                         0      0         512    
        Linker Generated:              0      53        0      
     +--+------------------------------+------+---------+---------+
-       Grand Total:                   2272   1413      548    
+       Grand Total:                   2264   1413      548    
 
 
 LINKER GENERATED COPY TABLES
 
-__TI_cinit_table @ 00000e60 records: 2, size/record: 8, table size: 16
-	.data: load addr=00000e38, load size=00000011 bytes, run addr=20000200, run size=00000018 bytes, compression=lzss
-	.bss: load addr=00000e58, load size=00000008 bytes, run addr=20000218, run size=0000000c bytes, compression=zero_init
+__TI_cinit_table @ 00000e58 records: 2, size/record: 8, table size: 16
+	.data: load addr=00000e30, load size=00000011 bytes, run addr=20000200, run size=00000018 bytes, compression=lzss
+	.bss: load addr=00000e50, load size=00000008 bytes, run addr=20000218, run size=0000000c bytes, compression=zero_init
 
 
 LINKER GENERATED HANDLER TABLE
 
-__TI_handler_table @ 00000e4c records: 3, size/record: 4, table size: 12
+__TI_handler_table @ 00000e44 records: 3, size/record: 4, table size: 12
 	index: 0, handler: __TI_decompress_lzss
 	index: 1, handler: __TI_decompress_none
 	index: 2, handler: __TI_zero_init
@@ -169,77 +169,77 @@ GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name
 
 address   name                           
 -------   ----                           
-000008c9  C$$EXIT                        
-00000a2d  GPIODirModeSet                 
+000008c1  C$$EXIT                        
+00000a25  GPIODirModeSet                 
 00000459  GPIOPadConfigSet               
-00000969  GPIOPinConfigure               
-00000aa5  GPIOPinTypeQEI                 
-00000ac7  QEIConfigure                   
-00000ad5  QEIDirectionGet                
-00000b09  QEIDisable                     
-00000b13  QEIEnable                      
-00000b1d  QEIIntDisable                  
-00000b41  QEIPositionGet                 
-00000b45  QEIPositionSet                 
-00000ab7  QEIVelocityConfigure           
-00000b27  QEIVelocityDisable             
-00000b31  QEIVelocityEnable              
-00000b49  QEIVelocityGet                 
-00000afd  ResetISR                       
+00000961  GPIOPinConfigure               
+00000a9d  GPIOPinTypeQEI                 
+00000abf  QEIConfigure                   
+00000acd  QEIDirectionGet                
+00000b01  QEIDisable                     
+00000b0b  QEIEnable                      
+00000b15  QEIIntDisable                  
+00000b39  QEIPositionGet                 
+00000b3d  QEIPositionSet                 
+00000aaf  QEIVelocityConfigure           
+00000b1f  QEIVelocityDisable             
+00000b29  QEIVelocityEnable              
+00000b41  QEIVelocityGet                 
+00000af5  ResetISR                       
 UNDEFED   SHT$$INIT_ARRAY$$Base          
 UNDEFED   SHT$$INIT_ARRAY$$Limit         
 0000026d  SysCtlClockFreqSet             
-00000b3b  SysCtlDelay                    
-000009f9  SysCtlPeripheralEnable         
+00000b33  SysCtlDelay                    
+000009f1  SysCtlPeripheralEnable         
 20000200  __STACK_END                    
 00000200  __STACK_SIZE                   
 20000200  __STACK_TOP                    
-00000e60  __TI_CINIT_Base                
-00000e70  __TI_CINIT_Limit               
-00000e4c  __TI_Handler_Table_Base        
-00000e58  __TI_Handler_Table_Limit       
-0000079d  __TI_auto_init                 
+00000e58  __TI_CINIT_Base                
+00000e68  __TI_CINIT_Limit               
+00000e44  __TI_Handler_Table_Base        
+00000e50  __TI_Handler_Table_Limit       
+00000795  __TI_auto_init                 
 20000200  __TI_cleanup_ptr               
-0000080d  __TI_decompress_lzss           
-00000ae3  __TI_decompress_none           
+00000805  __TI_decompress_lzss           
+00000adb  __TI_decompress_none           
 20000204  __TI_dtors_ptr                 
 20000208  __TI_enable_exit_profile_output
 ffffffff  __TI_pprof_out_hndl            
 ffffffff  __TI_prof_data_size            
 ffffffff  __TI_prof_data_start           
 00000000  __TI_static_base__             
-00000af1  __TI_zero_init                 
-00000721  __aeabi_memclr                 
-00000721  __aeabi_memclr4                
-00000721  __aeabi_memclr8                
-00000685  __aeabi_memcpy                 
-00000685  __aeabi_memcpy4                
-00000685  __aeabi_memcpy8                
-00000723  __aeabi_memset                 
-00000723  __aeabi_memset4                
-00000723  __aeabi_memset8                
+00000ae9  __TI_zero_init                 
+00000719  __aeabi_memclr                 
+00000719  __aeabi_memclr4                
+00000719  __aeabi_memclr8                
+0000067d  __aeabi_memcpy                 
+0000067d  __aeabi_memcpy4                
+0000067d  __aeabi_memcpy8                
+0000071b  __aeabi_memset                 
+0000071b  __aeabi_memset4                
+0000071b  __aeabi_memset8                
 ffffffff  __binit__                      
 ffffffff  __c_args__                     
 0000058b  __mpu_init                     
 20000000  __stack                        
-00000a79  _args_main                     
-00000875  _c_int00                       
+00000a71  _args_main                     
+0000086d  _c_int00                       
 2000020c  _lock                          
-00000a9f  _nop                           
-00000a97  _register_lock                 
-00000a91  _register_unlock               
-0000079b  _system_post_cinit             
-00000b4d  _system_pre_init               
+00000a97  _nop                           
+00000a8f  _register_lock                 
+00000a89  _register_unlock               
+00000793  _system_post_cinit             
+00000b45  _system_pre_init               
 20000210  _unlock                        
-000008cd  abort                          
+000008c5  abort                          
 ffffffff  binit                          
-0000091d  copy_in                        
-000008d5  exit                           
+00000915  copy_in                        
+000008cd  exit                           
 00000000  g_pfnVectors                   
 0000058d  main                           
 20000214  main_func_sp                   
-00000685  memcpy                         
-00000729  memset                         
+0000067d  memcpy                         
+00000721  memset                         
 20000218  ui32QEIDirection               
 2000021c  ui32QEIPosition                
 20000220  ui32QEIVelocity                
@@ -256,53 +256,53 @@ address   name
 00000459  GPIOPadConfigSet               
 0000058b  __mpu_init                     
 0000058d  main                           
-00000685  __aeabi_memcpy                 
-00000685  __aeabi_memcpy4                
-00000685  __aeabi_memcpy8                
-00000685  memcpy                         
-00000721  __aeabi_memclr                 
-00000721  __aeabi_memclr4                
-00000721  __aeabi_memclr8                
-00000723  __aeabi_memset                 
-00000723  __aeabi_memset4                
-00000723  __aeabi_memset8                
-00000729  memset                         
-0000079b  _system_post_cinit             
-0000079d  __TI_auto_init                 
-0000080d  __TI_decompress_lzss           
-00000875  _c_int00                       
-000008c9  C$$EXIT                        
-000008cd  abort                          
-000008d5  exit                           
-0000091d  copy_in                        
-00000969  GPIOPinConfigure               
-000009f9  SysCtlPeripheralEnable         
-00000a2d  GPIODirModeSet                 
-00000a79  _args_main                     
-00000a91  _register_unlock               
-00000a97  _register_lock                 
-00000a9f  _nop                           
-00000aa5  GPIOPinTypeQEI                 
-00000ab7  QEIVelocityConfigure           
-00000ac7  QEIConfigure                   
-00000ad5  QEIDirectionGet                
-00000ae3  __TI_decompress_none           
-00000af1  __TI_zero_init                 
-00000afd  ResetISR                       
-00000b09  QEIDisable                     
-00000b13  QEIEnable                      
-00000b1d  QEIIntDisable                  
-00000b27  QEIVelocityDisable             
-00000b31  QEIVelocityEnable              
-00000b3b  SysCtlDelay                    
-00000b41  QEIPositionGet                 
-00000b45  QEIPositionSet                 
-00000b49  QEIVelocityGet                 
-00000b4d  _system_pre_init               
-00000e4c  __TI_Handler_Table_Base        
-00000e58  __TI_Handler_Table_Limit       
-00000e60  __TI_CINIT_Base                
-00000e70  __TI_CINIT_Limit               
+0000067d  __aeabi_memcpy                 
+0000067d  __aeabi_memcpy4                
+0000067d  __aeabi_memcpy8                
+0000067d  memcpy                         
+00000719  __aeabi_memclr                 
+00000719  __aeabi_memclr4                
+00000719  __aeabi_memclr8                
+0000071b  __aeabi_memset                 
+0000071b  __aeabi_memset4                
+0000071b  __aeabi_memset8                
+00000721  memset                         
+00000793  _system_post_cinit             
+00000795  __TI_auto_init                 
+00000805  __TI_decompress_lzss           
+0000086d  _c_int00                       
+000008c1  C$$EXIT                        
+000008c5  abort                          
+000008cd  exit                           
+00000915  copy_in                        
+00000961  GPIOPinConfigure               
+000009f1  SysCtlPeripheralEnable         
+00000a25  GPIODirModeSet                 
+00000a71  _args_main                     
+00000a89  _register_unlock               
+00000a8f  _register_lock                 
+00000a97  _nop                           
+00000a9d  GPIOPinTypeQEI                 
+00000aaf  QEIVelocityConfigure           
+00000abf  QEIConfigure                   
+00000acd  QEIDirectionGet                
+00000adb  __TI_decompress_none           
+00000ae9  __TI_zero_init                 
+00000af5  ResetISR                       
+00000b01  QEIDisable                     
+00000b0b  QEIEnable                      
+00000b15  QEIIntDisable                  
+00000b1f  QEIVelocityDisable             
+00000b29  QEIVelocityEnable              
+00000b33  SysCtlDelay                    
+00000b39  QEIPositionGet                 
+00000b3d  QEIPositionSet                 
+00000b41  QEIVelocityGet                 
+00000b45  _system_pre_init               
+00000e44  __TI_Handler_Table_Base        
+00000e50  __TI_Handler_Table_Limit       
+00000e58  __TI_CINIT_Base                
+00000e68  __TI_CINIT_Limit               
 20000000  __stack                        
 20000200  __STACK_END                    
 20000200  __STACK_TOP                    

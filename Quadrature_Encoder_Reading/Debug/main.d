@@ -1,10 +1,11 @@
 # FIXED
 
 main.obj: ../main.c
+main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_16.6.0.STS/include/stdlib.h
+main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_16.6.0.STS/include/linkage.h
 main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_16.6.0.STS/include/stdint.h
 main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_16.6.0.STS/include/stdbool.h
 main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_16.6.0.STS/include/math.h
-main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_16.6.0.STS/include/linkage.h
 main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_16.6.0.STS/include/_defs.h
 main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_16.6.0.STS/include/stdio.h
 main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_16.6.0.STS/include/stdarg.h
@@ -24,10 +25,11 @@ main.obj: C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/pin_map.h
 main.obj: C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/qei.h
 
 ../main.c: 
+C:/ti/ccsv6/tools/compiler/ti-cgt-arm_16.6.0.STS/include/stdlib.h: 
+C:/ti/ccsv6/tools/compiler/ti-cgt-arm_16.6.0.STS/include/linkage.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_16.6.0.STS/include/stdint.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_16.6.0.STS/include/stdbool.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_16.6.0.STS/include/math.h: 
-C:/ti/ccsv6/tools/compiler/ti-cgt-arm_16.6.0.STS/include/linkage.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_16.6.0.STS/include/_defs.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_16.6.0.STS/include/stdio.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_16.6.0.STS/include/stdarg.h: 
