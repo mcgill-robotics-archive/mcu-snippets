@@ -1,0 +1,96 @@
+/*******************************************************************************
+ *                             Include Statements                              *
+ ******************************************************************************/
+#include <stdint.h>
+#include <stdbool.h>
+#include "inc/hw_memmap.h"
+#include "driverlib/gpio.h"
+#include "driverlib/sysctl.h"
+#include "driverlib/pin_map.h"
+#include "driverlib/pwm.h"
+
+/*******************************************************************************
+ *                                Main Method                                  *
+ ******************************************************************************/
+
+void main(void) {
+
+	// Set system clock to 80MHz using a PLL (200MHz / 2.5 = 80MHz)
+	SysCtlClockSet(SYSCTL_SYSDIV_2_5 | SYSCTL_USE_PLL | SYSCTL_OSC_MAIN |
+	                       SYSCTL_XTAL_16MHZ);
+
+	/* Before you begin:
+	 * We want a PWM output to appear on PF3 (the green LED on the LaunchPad).
+	 * If you go to page 1233 in the MCU's data sheet, you'll see that the PWM
+	 * output on PF3 is controlled by PWM Module 1, PWM Generator 3, and PWM
+	 * output 7 (see the diagram on page 1232). These numbers will affect the
+	 * arguments to the macro calls below.
+	 */
+
+	/* Set PWM clock base frequency.
+	 * PWM base frequency is the processor clock frequency divided by X, where
+	 * the input to SysCtlPWMClockSet is SYSCTL_PWMDIV_X.
+	 * If you're using the external oscillator (default), the processor clock
+	 * will be 80MHz. In this case, the divisor is 8, so the frequency base is
+	 * 10MHz. Note that this isn't the actual frequency of the PWM signal. That
+	 * will be set later to be an integer multiple of this value.
+	 */
+	SysCtlPWMClockSet(SYSCTL_PWMDIV_8);
+
+	// Enable the PWM peripheral and wait for it to be ready.
+	SysCtlPeripheralEnable(SYSCTL_PERIPH_PWM1);
+	while(!SysCtlPeripheralReady(SYSCTL_PERIPH_PWM1)){}
+
+	// Enable the GPIO peripheral and wait for it to be ready.
+	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
+	while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOF)){}
+
+	// Configure the internal multiplexer to connect the PWM peripheral to PF3
+	GPIOPinConfigure(GPIO_PF3_M1PWM7);
+
+	// Set up the PWM module on pin PF3
+	GPIOPinTypePWM(GPIO_PORTF_BASE, GPIO_PIN_3);
+
+	/* Configure PWM mode to count up/down without synchronization
+	 * This is just a detail, you probably don't have to worry about it.
+	 * See pages 1235 and 1237 in the data sheet if you want to learn more.
+	 */
+    PWMGenConfigure(PWM1_BASE, PWM_GEN_3, PWM_GEN_MODE_UP_DOWN |
+                    PWM_GEN_MODE_NO_SYNC);
+
+    /* Set the PWM period based on the time base we configured with
+     * SysCtlPWMClockSet above.
+     *
+     * If we want a frrequency of 250Hz:
+     * N = (1 / f) * BaseFreq, where N is the last parameter in PWMGenPeriodSet,
+     * f is the desired frequency, and BaseFreq is the PWM base frequency set
+     * above (10 MHz in this case). (1 / 250Hz) * 10 MHz = 40000.
+     *
+     * Note that the maximum period you can set is 2^16. If you need more than
+     * that, you'll need to modify the clock divisor.
+     */
+    PWMGenPeriodSet(PWM1_BASE, PWM_GEN_3, 40000);
+
+    /* Set the PWM duty cycle to 25%. The duty cycle is a function of the period.
+     * You can get the period set above using PWMGenPeriodGet.
+     *
+     * Warning! The PWM generator often freaks out when you set 100% duty cycle.
+     * It's a known issue in the silicon:
+     * https://e2e.ti.com/support/microcontrollers/tiva_arm/f/908/t/448664
+     * To avoid this, cap the PWM output at (MaxDuty - 1). I personally wouldn't
+     * trust it at 0% either. If you strictly need 0% and 100%, you should
+     * switch the pin back to a GPIO. Though this may take some time (~5us).
+     */
+    //TODO: change multiplier in the last input '/4' in this case
+    PWMPulseWidthSet(PWM1_BASE, PWM_OUT_7,
+                         PWMGenPeriodGet(PWM1_BASE, PWM_GEN_3)/4);
+
+    // Enable the PWM output signal
+    PWMOutputState(PWM1_BASE, PWM_OUT_7_BIT, true);
+
+    // Enable the PWM peripheral
+    PWMGenEnable(PWM1_BASE, PWM_GEN_3);
+
+    // Delay indefinitely so the program never stops.
+    while(1){}
+}
