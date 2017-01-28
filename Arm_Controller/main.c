@@ -87,10 +87,14 @@ void TimerIntHandler_Position(void){
 /*
  * main.c
  */
-int main(void) {
+	int main(void) {
 	//Set the system clock to 40MHz. 16MHz Main -> 400MHz PLL -> divide by 10
 	SysCtlClockSet(SYSCTL_SYSDIV_5|SYSCTL_USE_PLL|SYSCTL_XTAL_16MHZ|SYSCTL_OSC_MAIN);
-
+	configure_gpio();
+	configure_motor();
+	configure_qei();
+	int i;
+	motor_run(-1, 10.00);
 	
 	return 0;
 }

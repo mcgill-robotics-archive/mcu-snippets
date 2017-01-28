@@ -204,9 +204,14 @@ void configure_torque_timer(void);
 void configure_qei(void);
 
 /*
- * PWM Configuration
+ * GPIO Configuration
  */
-void configure_pwm(void);
+void configure_gpio(void);
+
+/*
+ * PWM and INA and INB Configuration for motor
+ */
+void configure_motor(void);
 
 /*
  * uDMA Configuration

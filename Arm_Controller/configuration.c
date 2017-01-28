@@ -80,6 +80,7 @@ void configure_qei(void){
 	 * 	Configure GPIO pins D6 and D7, as Phase A and B
 	 *	respectively of quadrature encoder
 	 */
+	SysCtlPeripheralEnable(SYSCTL_PERIPH_QEI0);
 	GPIOPinConfigure(GPIO_PD6_PHA0);
 	GPIOPinConfigure(GPIO_PD7_PHB0);
 	GPIOPinTypeQEI(GPIO_PORTD_BASE, GPIO_PIN_6 | GPIO_PIN_7);
@@ -103,7 +104,7 @@ void configure_qei(void){
 }
 
 /*
- * PWM Configuration
+ * PWM and INA and INB Configuration for motor
  */
 void configure_motor(void){
 
