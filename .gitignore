@@ -1,0 +1,10 @@
+*/Debug/
+*/.settings/
+*/.launches/
+*/targetConfigs/
+
+# C extensions
+*.so
+*.o
+**.o*
+**.gmo
