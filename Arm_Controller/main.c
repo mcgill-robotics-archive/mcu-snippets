@@ -94,7 +94,7 @@ void TimerIntHandler_Position(void){
 	configure_motor();
 	configure_qei();
 	int i;
-	motor_run(-1, 10.00);
+	motor_run(-1, 50.00);
 	
 	return 0;
 }

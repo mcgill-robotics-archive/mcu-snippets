@@ -2,7 +2,7 @@
 
 // Run motor at set speed
 void motor_run(int direction, double percentage){
-	long PWMFrequencyHz= 250;
+	long PWMFrequencyHz= 20000;
 	double PWMDutyCycleDivisor=(100.00/percentage);
 	int N= SysCtlPWMClockGet()/PWMFrequencyHz;
 

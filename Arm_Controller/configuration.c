@@ -128,6 +128,7 @@ void configure_motor(void){
 
 	// Set up the PWM module on pin PF3
 	GPIOPinTypePWM(GPIO_PORTF_BASE, GPIO_PIN_3);
+	PWMGenConfigure(PWM1_BASE, PWM_GEN_3, PWM_GEN_MODE_UP_DOWN|PWM_GEN_MODE_NO_SYNC);
 }
 
 /*
