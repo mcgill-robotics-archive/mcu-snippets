@@ -76,7 +76,7 @@
 /*
  * Period of torque loop
  */
-#define TORQUE_FREQ 20
+#define TORQUE_FREQ 5
 
 
 
@@ -204,9 +204,14 @@ void configure_torque_timer(void);
 void configure_qei(void);
 
 /*
- * PWM Configuration
+ * GPIO Configuration
  */
-void configure_pwm(void);
+void configure_gpio(void);
+
+/*
+ * PWM and INA and INB Configuration for motor
+ */
+void configure_motor(void);
 
 /*
  * uDMA Configuration
@@ -221,7 +226,10 @@ void configure_ADC(void);
  * PWM motor function
  */
 void motor_run(int direction, double percentage);
-
+/*
+ * Stop motor function
+ */
+void motor_stop(void);
 /*
  * Returns current sensor reading
  */
@@ -240,7 +248,7 @@ uint32_t getVelocity(void);
 /*
  * Returns encoder direction reading
  */
-uint32_t getDirection(void);
+int32_t getDirection(void);
 
 uint32_t getSetPosition();
 /*

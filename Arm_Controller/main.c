@@ -11,7 +11,7 @@
  */
 
 #include "arm_controller.h"
-
+uint8_t ui8LED = 2;
 /*
  * Position PI loop
  */
@@ -56,15 +56,22 @@ void torque_PI(uint32_t current, uint32_t set_torque){
  *Timer for Torque Loop Interrupt
  */
 void TimerIntHandler_Torque(void){
+	// Clear the timer interrupt
+	TimerIntClear(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
 	//get current measurement from current sensor
-	uint32_t current = getCurrent(); //fictional function, need to write
-	torque_PI(current, torque_input);
+	//uint32_t current = getCurrent(); //fictional function, need to write
+	//torque_PI(current, torque_input);
+	GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3, ui8LED);
+	if (ui8LED == 8) {ui8LED = 2;} else {ui8LED = ui8LED*2;}
+
 }
 
 /*
  * Timer for Velocity Loop Interrupt
  */
 void TimerIntHandler_Velocity(void){
+	// Clear the timer interrupt
+	TimerIntClear(TIMER1_BASE, TIMER_TIMA_TIMEOUT);
 	//get velocity measurement
 	uint32_t velocity = getVelocity();
 	vel_PI(velocity, vel_input);
@@ -74,6 +81,8 @@ void TimerIntHandler_Velocity(void){
  * Timer to Position Loop Interrupt
  */
 void TimerIntHandler_Position(void){
+	// Clear the timer interrupt
+	TimerIntClear(TIMER2_BASE, TIMER_TIMA_TIMEOUT);
 	//get position measurement
 	uint32_t pos = getPosition();
 	//get set position from path generator
@@ -87,10 +96,59 @@ void TimerIntHandler_Position(void){
 /*
  * main.c
  */
+
 int main(void) {
 	//Set the system clock to 40MHz. 16MHz Main -> 400MHz PLL -> divide by 10
 	SysCtlClockSet(SYSCTL_SYSDIV_5|SYSCTL_USE_PLL|SYSCTL_XTAL_16MHZ|SYSCTL_OSC_MAIN);
 
-	
-	return 0;
+	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
+	GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3);
+
+	configure_gpio();
+//	configure_motor();
+//	//configure_qei();
+//	//configure_ADC();
+//
+//	uint32_t current = getCurrent();
+//	uint32_t currentconstant= 1;
+//	uint32_t velocity = getVelocity();
+//	uint32_t velocityconstant = 20;
+	double speed= 0;
+	int i= 0;
+	/*
+	 * constant velocity test
+	 */
+//	while(velocity != velocityconstant ){
+//		motor_run(-1, speed);
+//		speed++;
+//	}
+//	while (i<2000){
+//		motor_run(-1, speed);
+//		i++;
+//	}
+//	motor_stop();
+
+
+
+
+	/*
+	 * constant current test
+	 */
+
+
+	//	while(current != currentconstant ){
+	//		motor_run(-1, speed);
+	//		speed++;
+	//	}
+	//	while (i<2000){
+	//		motor_run(-1, speed);
+	//		i++;
+	//	}
+	//	motor_stop();
+
+	/*
+	 * Loop testing
+	 */
+
+	configure_torque_timer();
 }

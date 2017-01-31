@@ -10,7 +10,7 @@ uint32_t getVelocity(void){
 	return ui32QEIVelocity;
 }
 
-uint32_t getDirection(void){
+int32_t getDirection(void){
 	return ui32QEIDirection = QEIDirectionGet(QEI0_BASE);
 }
 

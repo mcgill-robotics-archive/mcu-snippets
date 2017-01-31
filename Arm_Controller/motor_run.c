@@ -2,7 +2,7 @@
 
 // Run motor at set speed
 void motor_run(int direction, double percentage){
-	long PWMFrequencyHz= 250;
+	long PWMFrequencyHz= 20000;
 	double PWMDutyCycleDivisor=(100.00/percentage);
 	int N= SysCtlPWMClockGet()/PWMFrequencyHz;
 
@@ -27,9 +27,6 @@ void motor_run(int direction, double percentage){
 		PWMOutputState(PWM1_BASE, PWM_OUT_7_BIT, true);
 		// Enable the PWM peripheral
 		PWMGenEnable(PWM1_BASE, PWM_GEN_3);
-		//can also write as:
-		//GPIOPinWrite(GPIO_PORTD_BASE, GPIO_PIN_0, 0x00);
-		//GPIOPinWrite(GPIO_PORTD_BASE, GPIO_PIN_1, 0xFF);
 
 		//  Set motor direction
 		//TODO: transform to smaller function call
@@ -41,6 +38,7 @@ void motor_run(int direction, double percentage){
 			GPIOPinWrite(GPIO_PORTD_BASE, GPIO_PIN_0, 0xFF);
 			GPIOPinWrite(GPIO_PORTD_BASE, GPIO_PIN_1, 0x00);
 		}
+
 	}
 
 	else{
@@ -48,3 +46,5 @@ void motor_run(int direction, double percentage){
 		GPIOPinWrite(GPIO_PORTD_BASE, GPIO_PIN_1, 0x00);
 	}
 }
+
+
