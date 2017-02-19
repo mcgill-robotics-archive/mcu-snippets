@@ -66,17 +66,17 @@
 /*
  * Period of position loop
  */
-#define POS_FREQ 5
+#define POS_FREQ 4
 
 /*
  * Period of velocity loop
  */
-#define VEL_FREQ 10
+#define VEL_FREQ 11
 
 /*
  * Period of torque loop
  */
-#define TORQUE_FREQ 5
+#define TORQUE_FREQ 21
 
 
 
@@ -123,6 +123,13 @@ volatile uint32_t torque_input;
 volatile uint32_t motor_input;
 
 /*
+ * PI loop flags
+ */
+volatile uint8_t pos_flag;
+volatile uint8_t vel_flag;
+volatile uint8_t torque_flag;
+
+/*
  * Buffer for reading current sensor ouput
  */
 uint32_t pui32ADC0Value[1];
@@ -142,15 +149,15 @@ FILE* fp;
 /*
  * Position PI loop
  */
-void pos_PI(uint32_t theta, uint32_t set_theta);
+void pos_PI();
 /*
  * Velocity PI loop
  */
-void vel_PI(uint32_t vel, uint32_t set_vel);
+void vel_PI();
 /*
  * Torque PI loop
  */
-void torque_PI(uint32_t current, uint32_t set_torque);
+void torque_PI();
 
 /*
  * Position Loop Test

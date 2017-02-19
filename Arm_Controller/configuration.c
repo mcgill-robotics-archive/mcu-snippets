@@ -48,6 +48,7 @@ void configure_torque_timer(void){
 
 
 void configure_gpio(void){
+
 	// Enable the GPIO peripheral base D and wait for it to be ready.
 	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOD);
 	while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOD)){}
@@ -68,7 +69,7 @@ void configure_gpio(void){
 
 	// Enable the GPIO peripheral base E (ADC) and wait for it to be ready.
 	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOE);
-	while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOE)){}
+    while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOE)){}
 
 }
 /*
@@ -80,6 +81,7 @@ void configure_qei(void){
 	 * 	Configure GPIO pins D6 and D7, as Phase A and B
 	 *	respectively of quadrature encoder
 	 */
+	SysCtlPeripheralEnable(SYSCTL_PERIPH_QEI0);
 	GPIOPinConfigure(GPIO_PD6_PHA0);
 	GPIOPinConfigure(GPIO_PD7_PHB0);
 	GPIOPinTypeQEI(GPIO_PORTD_BASE, GPIO_PIN_6 | GPIO_PIN_7);
@@ -94,8 +96,8 @@ void configure_qei(void){
 	/*    Configure the QEI to capture on both A and B, not to reset when there is an index pulse, configure it as a quadrature encoder,
 		and doesn't swap signals PHA0 and PHB0 and set the maxmimum position as 1999. (MAX_POS_CAPTURE_A_B = (ppr*4)-1.'*/
 	QEIConfigure(QEI0_BASE, (QEI_CONFIG_CAPTURE_A_B | QEI_CONFIG_NO_RESET | QEI_CONFIG_QUADRATURE | QEI_CONFIG_NO_SWAP), 1999);
-	QEIVelocityConfigure(QEI0_BASE, QEI_VELDIV_16, 40000);
-	QEIPositionSet(QEI0_BASE, 999);
+	QEIVelocityConfigure(QEI0_BASE, QEI_VELDIV_1, 400000);
+	QEIPositionSet(QEI0_BASE, 0);
 
 	/*    Re-enable what needs to be enabled.*/
 	QEIEnable(QEI0_BASE);
@@ -106,16 +108,6 @@ void configure_qei(void){
  * PWM Configuration
  */
 void configure_motor(void){
-
-
-	/* Set PWM clock base frequency.
-	 * PWM base frequency is the processor clock frequency divided by X, where
-	 * the input to SysCtlPWMClockSet is SYSCTL_PWMDIV_X.
-	 * If you're using the external oscillator (default), the processor clock
-	 * will be 80MHz. In this case, the divisor is 8, so the frequency base is
-	 * 10MHz. Note that this isn't the actual frequency of the PWM signal. That
-	 * will be set later to be an integer multiple of this value.
-	 */
 	SysCtlPWMClockSet(SYSCTL_PWMDIV_8);
 
 	// Enable the PWM peripheral and wait for it to be ready.
@@ -127,6 +119,8 @@ void configure_motor(void){
 
 	// Set up the PWM module on pin PF3
 	GPIOPinTypePWM(GPIO_PORTF_BASE, GPIO_PIN_3);
+    PWMGenConfigure(PWM1_BASE, PWM_GEN_3, PWM_GEN_MODE_UP_DOWN|PWM_GEN_MODE_NO_SYNC);
+
 }
 
 /*
@@ -144,8 +138,6 @@ void configure_ADC(void){
 	// The ADC0 peripheral must be enabled for use and wait for it to be ready.
 	SysCtlPeripheralEnable(SYSCTL_PERIPH_ADC0);
 	while(!SysCtlPeripheralReady(SYSCTL_PERIPH_ADC0)){}
-
-
 
 
 	//CURRENT SENSE CONFIG
