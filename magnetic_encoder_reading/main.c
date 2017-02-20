@@ -1,97 +1,132 @@
-#include <stdint.h>
-#include <stdbool.h>
-#include <math.h>
-#include <stdio.h>
-#include <inttypes.h>
-#include "driverlib/pin_map.h"
-#include "inc/hw_memmap.h"
-#include "inc/hw_types.h"
-#include "inc/hw_gpio.h"
-#include "inc/hw_qei.h"
-#include "inc/hw_ssi.h"
-#include "driverlib/sysctl.h"
-#include "driverlib/interrupt.h"
-#include "driverlib/timer.h"
-#include "driverlib/fpu.h"
-#include "driverlib/gpio.h"
-#include "driverlib/debug.h"
+#include <stdint.h> // Variable definitions for the C99 standard.
+#include <stdio.h> // Input and output facilities for the C99 standard.
+#include <stdbool.h> // Boolean definitions for the C99 standard.
+#include "inc/tm4c123gh6pm.h" // Definitions for the interrupt and register assignments.
+#include "inc/hw_memmap.h" // Memory map definitions of the Tiva C Series device.
+#include "inc/hw_types.h" // Definitions of common types and macros.
+#include "driverlib/sysctl.h" // Definitions and macros for System Control API of DriverLib.
+#include "driverlib/interrupt.h" // Defines and macros for NVIC Controller API of DriverLib.
+#include "driverlib/gpio.h" // Definitions and macros for GPIO API of DriverLib.
+#include "driverlib/timer.h" // Defines and macros for Timer API of DriverLib.
+#include "driverlib/pin_map.h" //Mapping of peripherals to pins for all parts.
+#include "driverlib/uart.h" // Definitions and macros for UART API of DriverLib.
+#include "driverlib/adc.h" // Definitions for ADC API of DriverLib.
+#include "driverlib/fpu.h" // Prototypes for the FPU manipulation routines.
+#include "utils/uartstdio.h" // Prototypes for the UART console functions.
+#include "utils/uartstdio.c"                            // Needs to add "utils/uartstdio.c" through a relative link.
 #include "driverlib/pwm.h"
-#include "driverlib/pin_map.h"
-#include "driverlib/qei.h"
-#include "driverlib/ssi.h"
-#include "driverlib/rom.h"
-#include "driverlib/systick.h"
-#include "driverlib/uart.h"
-#include "utils/uartstdio.h"
-#include "inc/tm4c123gh6pm.h"
-#include "driverlib/adc.h"
+#include <math.h>
+//definitions
+#define UART1_BAUDRATE      115200  // UART baudrate in bps
 
-void RisingEdgeInt(void){
-	TimerIntClear(TIMER0_BASE, TIMER_CAPA_EVENT);
-	// Read the current state of the GPIO pin (blue LED) and
-		// write back the opposite state
-		if(GPIOPinRead(GPIO_PORTF_BASE, GPIO_PIN_2))
-		{
-			GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3, 0);
-		}
-		else
-		{
-			GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, 4);
-		}
+// function prototypes
+void init_timer(void);
+void duty_cycle(void);
+void init_UART(void);
+void init_pwm(void);
+
+// global variables
+uint32_t sys_clock;
+int32_t  start = 0, end = 0, length = 0;
+uint32_t angle;
+
+int main(void)
+{
+    // Configure system clock at 80 MHz.
+	SysCtlClockSet(SYSCTL_SYSDIV_2_5 | SYSCTL_USE_PLL | SYSCTL_OSC_MAIN | SYSCTL_XTAL_16MHZ);
+    sys_clock = SysCtlClockGet();
+
+    // Enable the processor to respond to interrupts.
+    IntMasterEnable();
+
+    init_UART();
+    init_pwm();
+    init_timer();
+
+    TimerEnable(WTIMER0_BASE, TIMER_BOTH);
+
+    while(1) {
+    }
 }
 
-void FallingEdgeInt(void){
-	TimerIntClear(TIMER0_BASE, TIMER_CAPB_EVENT);
-	// write back the opposite state
-	if(GPIOPinRead(GPIO_PORTF_BASE, GPIO_PIN_2))
-	{
-		GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3, 0);
-	}
-	else
-	{
-		GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, 4);
-	}
-}
-/*
- * main.c
- */
-int main(void) {
-	SysCtlClockSet(SYSCTL_SYSDIV_4|SYSCTL_USE_PLL|SYSCTL_XTAL_16MHZ|SYSCTL_OSC_MAIN);
-
-	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOB);
-
-	GPIOPinConfigure(GPIO_PB6_T0CCP0);
-
-	GPIOPinTypeTimer(GPIO_PORTF_BASE, GPIO_PIN_6);
-
-	//Enable GPIO clock
+void init_pwm(void)
+{
+	SysCtlPWMClockSet(SYSCTL_PWMDIV_8);
+	SysCtlPeripheralEnable(SYSCTL_PERIPH_PWM1);
+	while(!SysCtlPeripheralReady(SYSCTL_PERIPH_PWM1)){}
 	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
-	//Configure GPIO pins as output
-	GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3);
+	while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOF)){}
+	GPIOPinConfigure(GPIO_PF3_M1PWM7);
+	GPIOPinTypePWM(GPIO_PORTF_BASE, GPIO_PIN_3);
+	PWMGenConfigure(PWM1_BASE, PWM_GEN_3, PWM_GEN_MODE_UP_DOWN |
+					PWM_GEN_MODE_NO_SYNC);
+	PWMGenPeriodSet(PWM1_BASE, PWM_GEN_3, 10000);
+	PWMPulseWidthSet(PWM1_BASE, PWM_OUT_7,500 );
+	PWMOutputState(PWM1_BASE, PWM_OUT_7_BIT, true);
+	PWMGenEnable(PWM1_BASE, PWM_GEN_3);
+}
 
-	SysCtlPeripheralEnable(SYSCTL_PERIPH_TIMER0);
-	while(!SysCtlPeripheralReady(SYSCTL_PERIPH_TIMER0))
-	{
-	}
+void init_timer(void)
+{
+    // Enable and configure Timer0 peripheral.
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_WTIMER0);
 
-	//Configure Timer 0 to be a concatenated 32-bit periodic timer
-	TimerConfigure(TIMER0_BASE, TIMER_CFG_A_CAP_TIME_UP);
+    // Initialize timer A and B to count up in edge time mode
+    TimerConfigure(WTIMER0_BASE, (TIMER_CFG_SPLIT_PAIR | TIMER_CFG_A_CAP_TIME_UP | TIMER_CFG_B_CAP_TIME_UP));
 
-	TimerControlEvent(TIMER0_BASE, TIMER_A, TIMER_EVENT_POS_EDGE);
-	TimerControlEvent(TIMER0_BASE, TIMER_B, TIMER_EVENT_NEG_EDGE);
+    // Timer a records pos edge time and Timer b records neg edge time
+    TimerControlEvent(WTIMER0_BASE, TIMER_A, TIMER_EVENT_POS_EDGE);
+    TimerControlEvent(WTIMER0_BASE, TIMER_B, TIMER_EVENT_NEG_EDGE);
 
-	TimerIntEnable(TIMER0_BASE, TIMER_CAPA_EVENT);
-	TimerIntEnable(TIMER0_BASE, TIMER_CAPB_EVENT);
+    //TimerPrescaleSet(WTIMER0_BASE, TIMER_A , 0 );
+    //TimerPrescaleSet(WTIMER0_BASE, TIMER_B , 0 );
 
-	TimerIntRegister(TIMER0_BASE, TIMER_A, RisingEdgeInt);
-	TimerIntRegister(TIMER0_BASE, TIMER_B, FallingEdgeInt);
+    //set the value that the timers count to (0x9C3F = 39999)
+    //CO2 sensor outputs 1khz pwm so with mcu at 40Mhz, timers should stay in sync with CO2 output
+    TimerLoadSet(WTIMER0_BASE, TIMER_BOTH, 0x9C3F);
+
+    //Configure the pin that the timer reads from (PB6)
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOC);
+    GPIOPinConfigure(GPIO_PC5_WT0CCP1);
+    GPIOPinTypeTimer(GPIO_PORTC_BASE, GPIO_PIN_5);
+	GPIOPinConfigure(GPIO_PC4_WT0CCP0);
+	GPIOPinTypeTimer(GPIO_PORTC_BASE, GPIO_PIN_4);
 
 
-	//Enables the processor to respond to interrupts
-	IntMasterEnable();
+    // Registers a interrupt function to be called when timer b hits a neg edge event
+    IntRegister(INT_WTIMER0B, duty_cycle);
+    // Makes sure the interrupt is cleared
+    TimerIntClear(WTIMER0_BASE, TIMER_CAPB_EVENT);
+    // Enable the indicated timer interrupt source.
+    TimerIntEnable(WTIMER0_BASE, TIMER_CAPB_EVENT);
+    // The specified interrupt is enabled in the interrupt controller.
+    IntEnable(INT_WTIMER0B);
+}
 
-	//Start the timer
-	TimerEnable(TIMER0_BASE, TIMER_A);
-	TimerEnable(TIMER0_BASE, TIMER_B);
-	return 0;
+//When negative edge is hit, record the values and find the difference, output to putty
+void duty_cycle(void)
+{
+    TimerIntClear(WTIMER0_BASE, TIMER_CAPB_EVENT);
+    start = TimerValueGet(WTIMER0_BASE, TIMER_A);
+    end = TimerValueGet(WTIMER0_BASE, TIMER_B);
+    length = end - start;
+    if (length<0){
+    	length= 40000+length;
+    }
+    angle = 360*10000/length;
+    UARTprintf("\nSTART = %d\n", start);
+    UARTprintf("\nEND = %d\n", end);
+    UARTprintf("\nLENGTH = %d\n", length);
+    UARTprintf("\nANGLE = %d\n", angle);
+}
+
+void init_UART(void)
+{
+    // Enable and configure UART0 for debugging printouts.
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_UART0);
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOA);
+    GPIOPinConfigure(GPIO_PA0_U0RX);
+    GPIOPinConfigure(GPIO_PA1_U0TX);
+    GPIOPinTypeUART(GPIO_PORTA_BASE, (GPIO_PIN_0 | GPIO_PIN_1));
+    UARTStdioConfig(0, UART1_BAUDRATE, sys_clock);
 }
