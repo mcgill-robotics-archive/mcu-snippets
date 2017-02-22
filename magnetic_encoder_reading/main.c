@@ -46,22 +46,36 @@ int main(void)
     TimerEnable(WTIMER0_BASE, TIMER_BOTH);
 
     while(1) {
+    	duty_cycle();
     }
 }
 
 void init_pwm(void)
 {
+    /*This function configures the rate of the clock provided to the PWM module as a ratio of the
+	processor clock. This clock is used by the PWM module to generate PWM signals; its rate
+	forms the basis for all PWM signals*/
+	//PWM clock rate is 80MHz/8 = 10 MHz
 	SysCtlPWMClockSet(SYSCTL_PWMDIV_8);
+
 	SysCtlPeripheralEnable(SYSCTL_PERIPH_PWM1);
 	while(!SysCtlPeripheralReady(SYSCTL_PERIPH_PWM1)){}
+
 	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
 	while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOF)){}
+
+	//PF3 is the PWM output
 	GPIOPinConfigure(GPIO_PF3_M1PWM7);
 	GPIOPinTypePWM(GPIO_PORTF_BASE, GPIO_PIN_3);
+
 	PWMGenConfigure(PWM1_BASE, PWM_GEN_3, PWM_GEN_MODE_UP_DOWN |
 					PWM_GEN_MODE_NO_SYNC);
+
+	//PWM Period = 10000 PWM clock cycles = 10000*1/10M = 0.001 seconds
 	PWMGenPeriodSet(PWM1_BASE, PWM_GEN_3, 10000);
-	PWMPulseWidthSet(PWM1_BASE, PWM_OUT_7,500 );
+
+	//PWM Pulse width is 500 clock cycles, 500/10000 = 0.05, 0.05*0.001 = 0.00005 seconds
+	PWMPulseWidthSet(PWM1_BASE, PWM_OUT_7, 500);
 	PWMOutputState(PWM1_BASE, PWM_OUT_7_BIT, true);
 	PWMGenEnable(PWM1_BASE, PWM_GEN_3);
 }
@@ -71,7 +85,7 @@ void init_timer(void)
     // Enable and configure Timer0 peripheral.
     SysCtlPeripheralEnable(SYSCTL_PERIPH_WTIMER0);
 
-    // Initialize timer A and B to count up in edge time mode
+    // Initialize timer A and B to count up in edge time capture mode
     TimerConfigure(WTIMER0_BASE, (TIMER_CFG_SPLIT_PAIR | TIMER_CFG_A_CAP_TIME_UP | TIMER_CFG_B_CAP_TIME_UP));
 
     // Timer a records pos edge time and Timer b records neg edge time
@@ -111,9 +125,16 @@ void duty_cycle(void)
     end = TimerValueGet(WTIMER0_BASE, TIMER_B);
     length = end - start;
     if (length<0){
+    	UARTprintf("\nLENGTH = %d\n", length);
     	length= 40000+length;
     }
-    angle = 360*10000/length;
+    //notes: 10MHZ clock, duty cycle of 500 pwm clock cycles => length is always 0.00005 seconds
+    //length = 4001 => 4001 sysclock ticks => 4000 * 1/80M = 0.5 E-4 , length read by timer matches PWM duty cycle
+
+
+    //since PWM period is 10000 PWM clock cycles, and length is given in system clock cycles
+    //PWM subdiv = 8
+    angle = (360*length)/80000;
     UARTprintf("\nSTART = %d\n", start);
     UARTprintf("\nEND = %d\n", end);
     UARTprintf("\nLENGTH = %d\n", length);
@@ -130,3 +151,4 @@ void init_UART(void)
     GPIOPinTypeUART(GPIO_PORTA_BASE, (GPIO_PIN_0 | GPIO_PIN_1));
     UARTStdioConfig(0, UART1_BAUDRATE, sys_clock);
 }
+
