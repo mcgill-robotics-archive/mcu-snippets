@@ -1,0 +1,2323 @@
+Archive member included to satisfy reference by file (symbol)
+
+/opt/tivaware/usblib/gcc/libusb.a(usbbuffer.o)
+                              CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj (USBBufferInit)
+/opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                              CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj (USBDCDCInit)
+/opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+                              /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o) (USBDCDDeviceInfoInit)
+/opt/tivaware/usblib/gcc/libusb.a(usbdhandler.o)
+                              CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj (USB0DeviceIntHandler)
+/opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+                              /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o) (USBLibDMAInit)
+/opt/tivaware/usblib/gcc/libusb.a(usbmode.o)
+                              CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj (USBStackModeSet)
+/opt/tivaware/usblib/gcc/libusb.a(usbringbuf.o)
+                              /opt/tivaware/usblib/gcc/libusb.a(usbbuffer.o) (USBRingBufFlush)
+/opt/tivaware/usblib/gcc/libusb.a(usbtick.o)
+                              /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o) (InternalUSBTickInit)
+/opt/tivaware/usblib/gcc/libusb.a(usbulpi.o)
+                              /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o) (ULPIConfigSet)
+/opt/tivaware/usblib/gcc/libusb.a(usbdcdesc.o)
+                              /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o) (USBDCDConfigDescGetSize)
+/opt/tivaware/usblib/gcc/libusb.a(usbdconfig.o)
+                              /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o) (USBDeviceConfig)
+/opt/tivaware/usblib/gcc/libusb.a(usbdesc.o)
+                              /opt/tivaware/usblib/gcc/libusb.a(usbdcdesc.o) (USBDescGetNum)
+/opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+                              /opt/tivaware/usblib/gcc/libusb.a(usbmode.o) (USBHCDPowerConfigGet)
+/opt/tivaware/usblib/gcc/libusb.a(usbhhub.o)
+                              /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o) (USBHHubMain)
+/opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+                              CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj (GPIOPinTypePWM)
+/opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+                              CMakeFiles/arm_main.axf.dir/opt/tivaware/utils/ringbuf.c.obj (IntMasterEnable)
+/opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+                              CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj (PWMGenConfigure)
+/opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+                              CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj (SysCtlPeripheralReady)
+/opt/tivaware/driverlib/gcc/libdriver.a(systick.o)
+                              CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj (SysTickIntRegister)
+/opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+                              /opt/tivaware/usblib/gcc/libusb.a(usbdma.o) (uDMAChannelEnable)
+/opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                              /opt/tivaware/usblib/gcc/libusb.a(usbmode.o) (USBHostSuspend)
+/opt/tivaware/driverlib/gcc/libdriver.a(cpu.o)
+                              /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o) (CPUcpsid)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+                              CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/duration.cpp.obj (__aeabi_i2d)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
+                              CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/duration.cpp.obj (__aeabi_dmul)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_fixdfsi.o)
+                              CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/duration.cpp.obj (__aeabi_d2iz)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memcpy.o)
+                              CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj (memcpy)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-realloc.o)
+                              CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj (realloc)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reallocr.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-realloc.o) (_realloc_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+                              CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj (strlen)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-freer.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reallocr.o) (_free_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-impure.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-realloc.o) (_impure_ptr)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mallocr.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reallocr.o) (_malloc_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memmove.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reallocr.o) (memmove)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mlock.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reallocr.o) (__malloc_lock)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-sbrkr.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-freer.o) (_sbrk_r)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reent.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-sbrkr.o) (errno)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libnosys.a(sbrk.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-sbrkr.o) (_sbrk)
+
+Allocating common symbols
+Common symbol       size              file
+
+errno               0x4               /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reent.o)
+g_psDCDInst         0x50              /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+g_pui8USBRxBuffer   0x100             CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/usb_serial_structs.c.obj
+g_eOTGModeState     0x1               /opt/tivaware/usblib/gcc/libusb.a(usbmode.o)
+g_pui8USBTxBuffer   0x100             CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/usb_serial_structs.c.obj
+g_ui32PollRate      0x4               /opt/tivaware/usblib/gcc/libusb.a(usbmode.o)
+g_ppsDevInfo        0x4               /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+g_pvTickInstance    0x18              /opt/tivaware/usblib/gcc/libusb.a(usbtick.o)
+g_pfnTickHandlers   0x18              /opt/tivaware/usblib/gcc/libusb.a(usbtick.o)
+
+Discarded input sections
+
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/startup_gcc.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/startup_gcc.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/startup_gcc.c.obj
+ .bss.__dso_handle
+                0x0000000000000000        0x4 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/startup_gcc.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/arm_main.axf.dir/opt/tivaware/utils/ringbuf.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/arm_main.axf.dir/opt/tivaware/utils/ringbuf.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/arm_main.axf.dir/opt/tivaware/utils/ringbuf.c.obj
+ .text.UpdateIndexAtomic
+                0x0000000000000000       0x2c CMakeFiles/arm_main.axf.dir/opt/tivaware/utils/ringbuf.c.obj
+ .text.RingBufFull
+                0x0000000000000000       0x1a CMakeFiles/arm_main.axf.dir/opt/tivaware/utils/ringbuf.c.obj
+ .text.RingBufEmpty
+                0x0000000000000000        0xc CMakeFiles/arm_main.axf.dir/opt/tivaware/utils/ringbuf.c.obj
+ .text.RingBufFlush
+                0x0000000000000000       0x18 CMakeFiles/arm_main.axf.dir/opt/tivaware/utils/ringbuf.c.obj
+ .text.RingBufUsed
+                0x0000000000000000       0x12 CMakeFiles/arm_main.axf.dir/opt/tivaware/utils/ringbuf.c.obj
+ .text.RingBufFree
+                0x0000000000000000        0xe CMakeFiles/arm_main.axf.dir/opt/tivaware/utils/ringbuf.c.obj
+ .text.RingBufContigUsed
+                0x0000000000000000       0x10 CMakeFiles/arm_main.axf.dir/opt/tivaware/utils/ringbuf.c.obj
+ .text.RingBufContigFree
+                0x0000000000000000       0x1c CMakeFiles/arm_main.axf.dir/opt/tivaware/utils/ringbuf.c.obj
+ .text.RingBufSize
+                0x0000000000000000        0x4 CMakeFiles/arm_main.axf.dir/opt/tivaware/utils/ringbuf.c.obj
+ .text.RingBufReadOne
+                0x0000000000000000       0x18 CMakeFiles/arm_main.axf.dir/opt/tivaware/utils/ringbuf.c.obj
+ .text.RingBufRead
+                0x0000000000000000       0x1a CMakeFiles/arm_main.axf.dir/opt/tivaware/utils/ringbuf.c.obj
+ .text.RingBufAdvanceRead
+                0x0000000000000000       0x20 CMakeFiles/arm_main.axf.dir/opt/tivaware/utils/ringbuf.c.obj
+ .text.RingBufAdvanceWrite
+                0x0000000000000000       0x46 CMakeFiles/arm_main.axf.dir/opt/tivaware/utils/ringbuf.c.obj
+ .text.RingBufWriteOne
+                0x0000000000000000       0x12 CMakeFiles/arm_main.axf.dir/opt/tivaware/utils/ringbuf.c.obj
+ .text.RingBufWrite
+                0x0000000000000000       0x1a CMakeFiles/arm_main.axf.dir/opt/tivaware/utils/ringbuf.c.obj
+ .text.RingBufInit
+                0x0000000000000000        0xc CMakeFiles/arm_main.axf.dir/opt/tivaware/utils/ringbuf.c.obj
+ .comment       0x0000000000000000       0x39 CMakeFiles/arm_main.axf.dir/opt/tivaware/utils/ringbuf.c.obj
+ .ARM.attributes
+                0x0000000000000000       0x39 CMakeFiles/arm_main.axf.dir/opt/tivaware/utils/ringbuf.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/duration.cpp.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/duration.cpp.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/duration.cpp.obj
+ .text._ZN3ros22normalizeSecNSecSignedERlS0_
+                0x0000000000000000       0x3c CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/duration.cpp.obj
+ .text._ZN3ros8DurationpLERKS0_
+                0x0000000000000000       0x20 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/duration.cpp.obj
+ .text._ZN3ros8DurationmIERKS0_
+                0x0000000000000000       0x20 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/duration.cpp.obj
+ .text._ZN3ros8DurationmLEd
+                0x0000000000000000       0x3e CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/duration.cpp.obj
+ .comment       0x0000000000000000       0x39 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/duration.cpp.obj
+ .ARM.attributes
+                0x0000000000000000       0x39 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/duration.cpp.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/time.cpp.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/time.cpp.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/time.cpp.obj
+ .text._ZN3ros4Time8fromNSecEl
+                0x0000000000000000       0x24 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/time.cpp.obj
+ .text._ZN3ros4TimepLERKNS_8DurationE
+                0x0000000000000000       0x20 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/time.cpp.obj
+ .text._ZN3ros4TimemIERKNS_8DurationE
+                0x0000000000000000       0x20 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/time.cpp.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/tivac_hardware.cpp.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/tivac_hardware.cpp.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/tivac_hardware.cpp.obj
+ .bss.g_ui32heartbeat
+                0x0000000000000000        0x4 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/tivac_hardware.cpp.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/usb_serial_structs.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/usb_serial_structs.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/usb_serial_structs.c.obj
+ .text          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbbuffer.o)
+ .data          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbbuffer.o)
+ .bss           0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbbuffer.o)
+ .text.USBBufferZeroLengthPacketInsert
+                0x0000000000000000       0x12 /opt/tivaware/usblib/gcc/libusb.a(usbbuffer.o)
+ .text.USBBufferInfoGet
+                0x0000000000000000       0x12 /opt/tivaware/usblib/gcc/libusb.a(usbbuffer.o)
+ .text.USBBufferDataWritten
+                0x0000000000000000       0x16 /opt/tivaware/usblib/gcc/libusb.a(usbbuffer.o)
+ .text.USBBufferDataRemoved
+                0x0000000000000000        0xa /opt/tivaware/usblib/gcc/libusb.a(usbbuffer.o)
+ .text.USBBufferCallbackDataSet
+                0x0000000000000000        0x8 /opt/tivaware/usblib/gcc/libusb.a(usbbuffer.o)
+ .text.USBBufferSpaceAvailable
+                0x0000000000000000        0x6 /opt/tivaware/usblib/gcc/libusb.a(usbbuffer.o)
+ .text          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .data          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .bss           0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .text.USBDCDCTerm
+                0x0000000000000000       0x10 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .text.USBDCDCSetControlCBData
+                0x0000000000000000        0x8 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .text.USBDCDCSetRxCBData
+                0x0000000000000000        0x8 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .text.USBDCDCSetTxCBData
+                0x0000000000000000        0x8 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .text.USBDCDCSerialStateChange
+                0x0000000000000000       0x3a /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .text.USBDCDCPowerStatusSet
+                0x0000000000000000        0x6 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .text.USBDCDCRemoteWakeupRequest
+                0x0000000000000000        0x6 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .text          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .data          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .bss           0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .text.USBDCDTerm
+                0x0000000000000000       0x5c /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .text.USBDCDSetDefaultConfiguration
+                0x0000000000000000        0xc /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .text.USBDCDPowerStatusSet
+                0x0000000000000000       0x1c /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .text.USBDCDFeatureSet
+                0x0000000000000000       0x78 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .text.USBDCDRemoteWakeLPM
+                0x0000000000000000       0x1c /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .text.USBDCDRemoteWakeupRequest
+                0x0000000000000000       0x3c /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .text          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbdhandler.o)
+ .data          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbdhandler.o)
+ .bss           0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbdhandler.o)
+ .text          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .data          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .bss           0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.USBLibDMAAddrGet
+                0x0000000000000000        0x8 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.USBLibDMASizeGet
+                0x0000000000000000        0x8 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbmode.o)
+ .data          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbmode.o)
+ .bss           0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbmode.o)
+ .text.USBOTGSetMode
+                0x0000000000000000       0x90 /opt/tivaware/usblib/gcc/libusb.a(usbmode.o)
+ .text.USB0DualModeIntHandler
+                0x0000000000000000       0x48 /opt/tivaware/usblib/gcc/libusb.a(usbmode.o)
+ .text.USBDualModeInit
+                0x0000000000000000       0x6c /opt/tivaware/usblib/gcc/libusb.a(usbmode.o)
+ .text.USBDualModeTerm
+                0x0000000000000000       0x2c /opt/tivaware/usblib/gcc/libusb.a(usbmode.o)
+ .text.USBOTGModeTerm
+                0x0000000000000000       0x34 /opt/tivaware/usblib/gcc/libusb.a(usbmode.o)
+ .text.USBOTGModeInit
+                0x0000000000000000       0xb4 /opt/tivaware/usblib/gcc/libusb.a(usbmode.o)
+ .text.USBOTGPollRate
+                0x0000000000000000        0xc /opt/tivaware/usblib/gcc/libusb.a(usbmode.o)
+ .text.USB0OTGModeIntHandler
+                0x0000000000000000       0xc8 /opt/tivaware/usblib/gcc/libusb.a(usbmode.o)
+ .text.OTGDeviceDisconnect
+                0x0000000000000000       0x1c /opt/tivaware/usblib/gcc/libusb.a(usbmode.o)
+ .text.USBOTGMain
+                0x0000000000000000       0x84 /opt/tivaware/usblib/gcc/libusb.a(usbmode.o)
+ .text.USBOTGFeatureSet
+                0x0000000000000000       0x22 /opt/tivaware/usblib/gcc/libusb.a(usbmode.o)
+ .bss.g_ui32WaitTicks
+                0x0000000000000000        0x4 /opt/tivaware/usblib/gcc/libusb.a(usbmode.o)
+ .data.g_iDualMode
+                0x0000000000000000        0x1 /opt/tivaware/usblib/gcc/libusb.a(usbmode.o)
+ COMMON         0x0000000000000000        0x8 /opt/tivaware/usblib/gcc/libusb.a(usbmode.o)
+ .text          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbringbuf.o)
+ .data          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbringbuf.o)
+ .bss           0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbringbuf.o)
+ .text.USBRingBufFull
+                0x0000000000000000       0x1a /opt/tivaware/usblib/gcc/libusb.a(usbringbuf.o)
+ .text.USBRingBufEmpty
+                0x0000000000000000        0xc /opt/tivaware/usblib/gcc/libusb.a(usbringbuf.o)
+ .text.USBRingBufSize
+                0x0000000000000000        0x4 /opt/tivaware/usblib/gcc/libusb.a(usbringbuf.o)
+ .text          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbtick.o)
+ .data          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbtick.o)
+ .bss           0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbtick.o)
+ .text.InternalUSBTickReset
+                0x0000000000000000        0xc /opt/tivaware/usblib/gcc/libusb.a(usbtick.o)
+ .text          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbulpi.o)
+ .data          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbulpi.o)
+ .bss           0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbulpi.o)
+ .text.ULPIPowerTransceiver
+                0x0000000000000000        0xe /opt/tivaware/usblib/gcc/libusb.a(usbulpi.o)
+ .text          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbdcdesc.o)
+ .data          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbdcdesc.o)
+ .bss           0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbdcdesc.o)
+ .text.USBDCDConfigGetNumAlternateInterfaces
+                0x0000000000000000       0x32 /opt/tivaware/usblib/gcc/libusb.a(usbdcdesc.o)
+ .text          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbdconfig.o)
+ .data          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbdconfig.o)
+ .bss           0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbdconfig.o)
+ .text          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbdesc.o)
+ .data          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbdesc.o)
+ .bss           0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbdesc.o)
+ .text.USBDescGetNumAlternateInterfaces
+                0x0000000000000000       0x26 /opt/tivaware/usblib/gcc/libusb.a(usbdesc.o)
+ .text.USBDescGetInterface
+                0x0000000000000000       0x42 /opt/tivaware/usblib/gcc/libusb.a(usbdesc.o)
+ .text.USBDescGetInterfaceEndpoint
+                0x0000000000000000       0x14 /opt/tivaware/usblib/gcc/libusb.a(usbdesc.o)
+ .text          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .data          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .bss           0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.FIFOFree
+                0x0000000000000000       0x38 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.FIFOAlloc
+                0x0000000000000000       0x8c /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.ConfigDescFree.part.0
+                0x0000000000000000       0x28 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.ConfigDescAlloc
+                0x0000000000000000       0x54 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.ConfigDescFree
+                0x0000000000000000       0x10 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDEventEnable
+                0x0000000000000000       0x28 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDEventDisable
+                0x0000000000000000       0x28 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDPipeTransferSizeGet
+                0x0000000000000000       0x14 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDPipeAllocSize
+                0x0000000000000000      0x1b0 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDPipeAlloc
+                0x0000000000000000       0x10 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDPipeConfig
+                0x0000000000000000       0xdc /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDPipeStatus
+                0x0000000000000000        0x4 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDPipeSchedule
+                0x0000000000000000       0xb4 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDPipeReadNonBlocking
+                0x0000000000000000       0x40 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDPipeDataAck
+                0x0000000000000000       0x28 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDPipeFree
+                0x0000000000000000       0xe8 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDPowerConfigInit
+                0x0000000000000000        0xc /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDPowerConfigGet
+                0x0000000000000000        0xc /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDPowerConfigSet
+                0x0000000000000000       0x50 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDInitInternal
+                0x0000000000000000      0x178 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDPowerAutomatic
+                0x0000000000000000       0x14 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDInit
+                0x0000000000000000       0xec /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDRegisterDrivers
+                0x0000000000000000       0x10 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDTerm
+                0x0000000000000000       0x80 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDReset
+                0x0000000000000000       0x34 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDSuspend
+                0x0000000000000000        0xc /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDResume
+                0x0000000000000000       0x2c /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHostCheckPipes
+                0x0000000000000000       0x68 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHostIntHandlerInternal
+                0x0000000000000000      0x438 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USB0HostIntHandler
+                0x0000000000000000       0x18 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.InternalUSBHCDSendEvent
+                0x0000000000000000       0x30 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.SendUnknownConnect.isra.1
+                0x0000000000000000       0x18 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDDeviceDisconnected.constprop.4
+                0x0000000000000000       0x94 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDControlTransfer
+                0x0000000000000000      0x210 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDStringDescriptorGet
+                0x0000000000000000       0x3c /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDSetAddress
+                0x0000000000000000       0x4c /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDSetConfig
+                0x0000000000000000       0x32 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDSetInterface
+                0x0000000000000000       0x32 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDMain
+                0x0000000000000000      0x350 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDClearFeature.constprop.7
+                0x0000000000000000       0x84 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDPipeRead
+                0x0000000000000000      0x170 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDPipeWrite
+                0x0000000000000000      0x140 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDHubDeviceConnected
+                0x0000000000000000       0x4c /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDHubDeviceDisconnected
+                0x0000000000000000       0x10 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDDevHubPort
+                0x0000000000000000       0x1c /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDDevAddress
+                0x0000000000000000       0x1c /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDDevClass
+                0x0000000000000000       0x30 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDDevSubClass
+                0x0000000000000000       0x30 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDDevProtocol
+                0x0000000000000000       0x30 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDFeatureSet
+                0x0000000000000000       0x80 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDLPMStatus
+                0x0000000000000000        0xe /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDLPMSleep
+                0x0000000000000000       0x58 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text.USBHCDLPMResume
+                0x0000000000000000        0xc /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .rodata.CSWTCH.42
+                0x0000000000000000       0x14 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .bss.g_pi32USBHActiveDriver
+                0x0000000000000000       0x18 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .bss.ui32SOFDivide.5453
+                0x0000000000000000        0x4 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .bss.g_ppvDriverInstance
+                0x0000000000000000       0x18 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .bss.g_ui32CurrentTick
+                0x0000000000000000        0x4 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .data.g_ui32PLLDiv
+                0x0000000000000000        0x4 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .bss.g_ui32ULPISupport
+                0x0000000000000000        0x4 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .bss.g_sUSBHEP0State
+                0x0000000000000000       0x18 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .bss.g_ui32Tickms
+                0x0000000000000000        0x4 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .data.g_ui32PowerConfig
+                0x0000000000000000        0x4 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .bss.g_pui32Alloc
+                0x0000000000000000        0x8 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .bss.g_sUSBHCD
+                0x0000000000000000      0x6cc /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .comment       0x0000000000000000       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .ARM.attributes
+                0x0000000000000000       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbhostenum.o)
+ .text          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbhhub.o)
+ .data          0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbhhub.o)
+ .bss           0x0000000000000000        0x0 /opt/tivaware/usblib/gcc/libusb.a(usbhhub.o)
+ .text.HubDriverClose
+                0x0000000000000000       0x7c /opt/tivaware/usblib/gcc/libusb.a(usbhhub.o)
+ .text.HubIntINCallback
+                0x0000000000000000       0x50 /opt/tivaware/usblib/gcc/libusb.a(usbhhub.o)
+ .text.HubGetPortStatus.constprop.1
+                0x0000000000000000       0x50 /opt/tivaware/usblib/gcc/libusb.a(usbhhub.o)
+ .text.HubClearPortFeature.constprop.2
+                0x0000000000000000       0x38 /opt/tivaware/usblib/gcc/libusb.a(usbhhub.o)
+ .text.HubSetPortFeature.constprop.3
+                0x0000000000000000       0x38 /opt/tivaware/usblib/gcc/libusb.a(usbhhub.o)
+ .text.HubDriverOpen
+                0x0000000000000000      0x150 /opt/tivaware/usblib/gcc/libusb.a(usbhhub.o)
+ .text.USBHHubMain
+                0x0000000000000000      0x220 /opt/tivaware/usblib/gcc/libusb.a(usbhhub.o)
+ .text.USBHHubEnumerationComplete
+                0x0000000000000000       0x18 /opt/tivaware/usblib/gcc/libusb.a(usbhhub.o)
+ .text.USBHHubEnumerationError
+                0x0000000000000000       0x18 /opt/tivaware/usblib/gcc/libusb.a(usbhhub.o)
+ .text.USBHHubOpen
+                0x0000000000000000       0x14 /opt/tivaware/usblib/gcc/libusb.a(usbhhub.o)
+ .text.USBHHubClose
+                0x0000000000000000        0x8 /opt/tivaware/usblib/gcc/libusb.a(usbhhub.o)
+ .text.USBHHubInit
+                0x0000000000000000       0x44 /opt/tivaware/usblib/gcc/libusb.a(usbhhub.o)
+ .text.USBHHubLPMSleep
+                0x0000000000000000        0x6 /opt/tivaware/usblib/gcc/libusb.a(usbhhub.o)
+ .text.USBHHubLPMStatus
+                0x0000000000000000        0x6 /opt/tivaware/usblib/gcc/libusb.a(usbhhub.o)
+ .bss.g_ui32HubChanges
+                0x0000000000000000        0x4 /opt/tivaware/usblib/gcc/libusb.a(usbhhub.o)
+ .bss.g_sRootHub
+                0x0000000000000000       0x9c /opt/tivaware/usblib/gcc/libusb.a(usbhhub.o)
+ .bss.g_ui32ChangeFlags
+                0x0000000000000000        0x4 /opt/tivaware/usblib/gcc/libusb.a(usbhhub.o)
+ .rodata.g_sUSBHubClassDriver
+                0x0000000000000000       0x10 /opt/tivaware/usblib/gcc/libusb.a(usbhhub.o)
+ .comment       0x0000000000000000       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbhhub.o)
+ .ARM.attributes
+                0x0000000000000000       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbhhub.o)
+ .text          0x0000000000000000        0x0 /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .data          0x0000000000000000        0x0 /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .bss           0x0000000000000000        0x0 /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text._GPIOIntNumberGet
+                0x0000000000000000       0x44 /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIODirModeGet
+                0x0000000000000000       0x22 /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOIntTypeSet
+                0x0000000000000000       0x5a /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOIntTypeGet
+                0x0000000000000000       0x42 /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPadConfigGet
+                0x0000000000000000       0xc6 /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOIntEnable
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOIntDisable
+                0x0000000000000000        0xe /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOIntStatus
+                0x0000000000000000        0xe /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOIntClear
+                0x0000000000000000        0x6 /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOIntRegister
+                0x0000000000000000       0x1a /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOIntUnregister
+                0x0000000000000000       0x16 /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinRead
+                0x0000000000000000        0x6 /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinWrite
+                0x0000000000000000        0x6 /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinTypeADC
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinTypeCAN
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinTypeComparator
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinTypeComparatorOutput
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinTypeDIVSCLK
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinTypeEPI
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinTypeEthernetLED
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinTypeEthernetMII
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinTypeGPIOInput
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinTypeGPIOOutput
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinTypeGPIOOutputOD
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinTypeHibernateRTCCLK
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinTypeI2C
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinTypeI2CSCL
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinTypeLCD
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinTypeOneWire
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinTypeQEI
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinTypeSSI
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinTypeTimer
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinTypeTrace
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinTypeUART
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinTypeUSBAnalog
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinTypeUSBDigital
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinTypeWakeHigh
+                0x0000000000000000       0x1e /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinTypeWakeLow
+                0x0000000000000000       0x1e /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOPinWakeStatus
+                0x0000000000000000        0x6 /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIODMATriggerEnable
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIODMATriggerDisable
+                0x0000000000000000        0xe /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOADCTriggerEnable
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text.GPIOADCTriggerDisable
+                0x0000000000000000        0xe /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .rodata.g_ppui32GPIOIntMapSnowflake
+                0x0000000000000000       0xc0 /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .rodata.g_ppui32GPIOIntMapBlizzard
+                0x0000000000000000       0xc0 /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .text          0x0000000000000000        0x0 /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+ .data          0x0000000000000000        0x0 /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+ .bss           0x0000000000000000        0x0 /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+ .text._IntDefaultHandler
+                0x0000000000000000        0x2 /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+ .text.IntUnregister
+                0x0000000000000000       0x14 /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+ .text.IntPriorityGroupingSet
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+ .text.IntPriorityGroupingGet
+                0x0000000000000000       0x24 /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+ .text.IntPrioritySet
+                0x0000000000000000       0x28 /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+ .text.IntPriorityGet
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+ .text.IntPendSet
+                0x0000000000000000       0x4c /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+ .text.IntPendClear
+                0x0000000000000000       0x3c /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+ .text.IntPriorityMaskSet
+                0x0000000000000000        0x4 /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+ .text.IntPriorityMaskGet
+                0x0000000000000000        0x4 /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+ .text.IntTrigger
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+ .rodata.g_pui32Priority
+                0x0000000000000000       0x20 /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+ .rodata.g_pui32PendRegs
+                0x0000000000000000       0x14 /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+ .rodata.g_pui32Regs
+                0x0000000000000000       0x9c /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+ .rodata.g_pui32UnpendRegs
+                0x0000000000000000       0x14 /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+ .text          0x0000000000000000        0x0 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .data          0x0000000000000000        0x0 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .bss           0x0000000000000000        0x0 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text._PWMGenIntNumberGet
+                0x0000000000000000      0x108 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text._PWMFaultIntNumberGet
+                0x0000000000000000       0x4c /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMGenPeriodGet
+                0x0000000000000000       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMGenDisable
+                0x0000000000000000        0xa /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMPulseWidthGet
+                0x0000000000000000       0x20 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMDeadBandEnable
+                0x0000000000000000       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMDeadBandDisable
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMSyncUpdate
+                0x0000000000000000        0x4 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMSyncTimeBase
+                0x0000000000000000        0x4 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMOutputInvert
+                0x0000000000000000       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMOutputFaultLevel
+                0x0000000000000000       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMOutputFault
+                0x0000000000000000       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMGenIntRegister
+                0x0000000000000000       0x1a /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMGenIntUnregister
+                0x0000000000000000       0x16 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMFaultIntRegister
+                0x0000000000000000       0x1a /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMFaultIntUnregister
+                0x0000000000000000       0x16 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMGenIntTrigEnable
+                0x0000000000000000        0xa /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMGenIntTrigDisable
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMGenIntStatus
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMGenIntClear
+                0x0000000000000000        0x6 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMIntEnable
+                0x0000000000000000        0x8 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMIntDisable
+                0x0000000000000000        0xa /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMFaultIntClear
+                0x0000000000000000        0x8 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMIntStatus
+                0x0000000000000000        0xa /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMFaultIntClearExt
+                0x0000000000000000        0x4 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMGenFaultConfigure
+                0x0000000000000000       0x18 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMGenFaultTriggerSet
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMGenFaultTriggerGet
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMGenFaultStatus
+                0x0000000000000000       0x18 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMGenFaultClear
+                0x0000000000000000       0x18 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMClockSet
+                0x0000000000000000       0x14 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMClockGet
+                0x0000000000000000       0x18 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text.PWMOutputUpdateMode
+                0x0000000000000000       0x34 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .text          0x0000000000000000        0x0 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .data          0x0000000000000000        0x0 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .bss           0x0000000000000000        0x0 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text._SysCtlMemTimingGet
+                0x0000000000000000       0x28 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlSRAMSizeGet
+                0x0000000000000000       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlFlashSizeGet
+                0x0000000000000000       0x40 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlFlashSectorSizeGet
+                0x0000000000000000       0x34 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlPeripheralPresent
+                0x0000000000000000       0x28 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlPeripheralPowerOn
+                0x0000000000000000       0x24 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlPeripheralPowerOff
+                0x0000000000000000       0x24 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlPeripheralDisable
+                0x0000000000000000       0x24 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlPeripheralSleepEnable
+                0x0000000000000000       0x24 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlPeripheralSleepDisable
+                0x0000000000000000       0x24 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlPeripheralDeepSleepEnable
+                0x0000000000000000       0x24 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlPeripheralDeepSleepDisable
+                0x0000000000000000       0x24 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlPeripheralClockGating
+                0x0000000000000000       0x48 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlIntRegister
+                0x0000000000000000       0x14 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlIntUnregister
+                0x0000000000000000       0x12 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlIntEnable
+                0x0000000000000000       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlIntDisable
+                0x0000000000000000       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlIntClear
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlIntStatus
+                0x0000000000000000       0x14 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlLDOSleepSet
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlLDOSleepGet
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlLDODeepSleepSet
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlLDODeepSleepGet
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlSleepPowerSet
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlDeepSleepPowerSet
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlReset
+                0x0000000000000000       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlSleep
+                0x0000000000000000        0x4 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlDeepSleep
+                0x0000000000000000       0x20 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlResetCauseGet
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlResetCauseClear
+                0x0000000000000000       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlDelay
+                0x0000000000000000        0x8 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlMOSCConfigSet
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlPIOSCCalibrate
+                0x0000000000000000       0x48 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlResetBehaviorSet
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlResetBehaviorGet
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlClockFreqSet
+                0x0000000000000000      0x22c /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlClockSet
+                0x0000000000000000      0x124 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlClockGet
+                0x0000000000000000      0x150 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlDeepSleepClockSet
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlDeepSleepClockConfigSet
+                0x0000000000000000       0x60 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlPWMClockGet
+                0x0000000000000000       0x18 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlGPIOAHBEnable
+                0x0000000000000000       0x18 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlGPIOAHBDisable
+                0x0000000000000000       0x18 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlUSBPLLDisable
+                0x0000000000000000       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlVoltageEventConfig
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlVoltageEventStatus
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlVoltageEventClear
+                0x0000000000000000       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlVCOGet
+                0x0000000000000000       0x78 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlNMIStatus
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlNMIClear
+                0x0000000000000000       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlClockOutConfig
+                0x0000000000000000       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text.SysCtlAltClkConfig
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .rodata.g_pppui32XTALtoVCO
+                0x0000000000000000      0x1b0 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .rodata.g_pui32VCOFrequencies
+                0x0000000000000000        0x8 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .rodata.g_sXTALtoMEMTIM
+                0x0000000000000000       0x30 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .rodata.g_pui32Xtals
+                0x0000000000000000       0x6c /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .text          0x0000000000000000        0x0 /opt/tivaware/driverlib/gcc/libdriver.a(systick.o)
+ .data          0x0000000000000000        0x0 /opt/tivaware/driverlib/gcc/libdriver.a(systick.o)
+ .bss           0x0000000000000000        0x0 /opt/tivaware/driverlib/gcc/libdriver.a(systick.o)
+ .text.SysTickEnable
+                0x0000000000000000       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(systick.o)
+ .text.SysTickDisable
+                0x0000000000000000       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(systick.o)
+ .text.SysTickIntUnregister
+                0x0000000000000000       0x14 /opt/tivaware/driverlib/gcc/libdriver.a(systick.o)
+ .text.SysTickIntEnable
+                0x0000000000000000       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(systick.o)
+ .text.SysTickIntDisable
+                0x0000000000000000       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(systick.o)
+ .text.SysTickPeriodSet
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(systick.o)
+ .text.SysTickPeriodGet
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(systick.o)
+ .text.SysTickValueGet
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(systick.o)
+ .text          0x0000000000000000        0x0 /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+ .data          0x0000000000000000        0x0 /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+ .bss           0x0000000000000000        0x0 /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+ .text.uDMAEnable
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+ .text.uDMADisable
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+ .text.uDMAErrorStatusGet
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+ .text.uDMAErrorStatusClear
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+ .text.uDMAChannelIsEnabled
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+ .text.uDMAControlBaseSet
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+ .text.uDMAControlBaseGet
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+ .text.uDMAControlAlternateBaseGet
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+ .text.uDMAChannelRequest
+                0x0000000000000000       0x14 /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+ .text.uDMAChannelAttributeEnable
+                0x0000000000000000       0x48 /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+ .text.uDMAChannelAttributeGet
+                0x0000000000000000       0x4c /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+ .text.uDMAChannelScatterGatherSet
+                0x0000000000000000       0x50 /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+ .text.uDMAChannelSizeGet
+                0x0000000000000000       0x20 /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+ .text.uDMAIntRegister
+                0x0000000000000000       0x12 /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+ .text.uDMAIntUnregister
+                0x0000000000000000       0x12 /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+ .text.uDMAIntStatus
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+ .text.uDMAIntClear
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+ .text.uDMAChannelAssign
+                0x0000000000000000       0x2c /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+ .text.uDMAChannelSelectSecondary
+                0x0000000000000000       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+ .text.uDMAChannelSelectDefault
+                0x0000000000000000       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+ .text          0x0000000000000000        0x0 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .data          0x0000000000000000        0x0 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .bss           0x0000000000000000        0x0 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostSuspend
+                0x0000000000000000        0xa /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostReset
+                0x0000000000000000       0x12 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHighSpeed
+                0x0000000000000000       0x12 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostSpeedGet
+                0x0000000000000000       0x28 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBDevSpeedGet
+                0x0000000000000000        0xe /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBIntDisableControl
+                0x0000000000000000       0x28 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBIntDisableEndpoint
+                0x0000000000000000       0x1a /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBIntUnregister
+                0x0000000000000000       0x16 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostEndpointStatusClear
+                0x0000000000000000       0x2a /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostEndpointDataToggle
+                0x0000000000000000       0x50 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBEndpointDataToggleClear
+                0x0000000000000000       0x1e /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostEndpointPing
+                0x0000000000000000       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBDevAddrGet
+                0x0000000000000000        0x4 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostEndpointConfig
+                0x0000000000000000       0xd0 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostEndpointSpeed
+                0x0000000000000000       0x3e /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBDevEndpointConfigGet
+                0x0000000000000000       0x76 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBFIFOConfigGet
+                0x0000000000000000       0x48 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostEndpointDataAck
+                0x0000000000000000       0x1e /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBFIFOFlush
+                0x0000000000000000       0x3c /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostRequestIN
+                0x0000000000000000       0x12 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostRequestINClear
+                0x0000000000000000       0x16 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostRequestStatus
+                0x0000000000000000        0x8 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostAddrSet
+                0x0000000000000000       0x14 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostAddrGet
+                0x0000000000000000       0x14 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostHubAddrSet
+                0x0000000000000000       0x30 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostHubAddrGet
+                0x0000000000000000       0x14 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostPwrConfig
+                0x0000000000000000       0x1e /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostPwrFaultEnable
+                0x0000000000000000       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostPwrFaultDisable
+                0x0000000000000000       0x12 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostPwrEnable
+                0x0000000000000000       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostPwrDisable
+                0x0000000000000000       0x12 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBFrameNumberGet
+                0x0000000000000000        0x6 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBOTGSessionRequest
+                0x0000000000000000       0x16 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBModeGet
+                0x0000000000000000        0xa /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostMode
+                0x0000000000000000        0x8 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBModeConfig
+                0x0000000000000000        0x6 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBPHYPowerOff
+                0x0000000000000000        0xa /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBPHYPowerOn
+                0x0000000000000000        0xa /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBNumEndpointsGet
+                0x0000000000000000        0xa /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBClockDisable
+                0x0000000000000000        0x8 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBDMAChannelStatusClear
+                0x0000000000000000       0x14 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBDMAChannelAddressGet
+                0x0000000000000000        0xa /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBDMAChannelCountGet
+                0x0000000000000000        0xa /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBDMANumChannels
+                0x0000000000000000        0x8 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBULPIConfig
+                0x0000000000000000        0x8 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostLPMSend
+                0x0000000000000000       0x28 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostLPMConfig
+                0x0000000000000000       0x14 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostLPMResume
+                0x0000000000000000        0xe /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBDevLPMRemoteWake
+                0x0000000000000000        0xe /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBLPMLinkStateGet
+                0x0000000000000000        0xa /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBLPMEndpointGet
+                0x0000000000000000        0xc /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBLPMRemoteWakeEnabled
+                0x0000000000000000        0xa /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBLPMIntDisable
+                0x0000000000000000        0xe /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text          0x0000000000000000        0x0 /opt/tivaware/driverlib/gcc/libdriver.a(cpu.o)
+ .data          0x0000000000000000        0x0 /opt/tivaware/driverlib/gcc/libdriver.a(cpu.o)
+ .bss           0x0000000000000000        0x0 /opt/tivaware/driverlib/gcc/libdriver.a(cpu.o)
+ .text.CPUprimask
+                0x0000000000000000        0x6 /opt/tivaware/driverlib/gcc/libdriver.a(cpu.o)
+ .text.CPUwfi   0x0000000000000000        0x4 /opt/tivaware/driverlib/gcc/libdriver.a(cpu.o)
+ .text.CPUbasepriSet
+                0x0000000000000000        0x6 /opt/tivaware/driverlib/gcc/libdriver.a(cpu.o)
+ .text.CPUbasepriGet
+                0x0000000000000000        0x6 /opt/tivaware/driverlib/gcc/libdriver.a(cpu.o)
+ .text          0x0000000000000000      0x370 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+ .debug_line    0x0000000000000000      0x179 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+ .debug_info    0x0000000000000000       0xc2 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+ .debug_abbrev  0x0000000000000000       0x14 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x0000000000000000       0x22 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_addsubdf3.o)
+ .text          0x0000000000000000      0x424 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
+ .debug_line    0x0000000000000000      0x19d /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
+ .debug_info    0x0000000000000000       0xc2 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
+ .debug_abbrev  0x0000000000000000       0x14 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x0000000000000000       0x22 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_muldivdf3.o)
+ .text          0x0000000000000000       0x50 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_fixdfsi.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_fixdfsi.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_fixdfsi.o)
+ .debug_line    0x0000000000000000       0x7a /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_fixdfsi.o)
+ .debug_info    0x0000000000000000       0xc2 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_fixdfsi.o)
+ .debug_abbrev  0x0000000000000000       0x14 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_fixdfsi.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_fixdfsi.o)
+ .ARM.attributes
+                0x0000000000000000       0x22 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a(_arm_fixdfsi.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memcpy.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memcpy.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-realloc.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-realloc.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-realloc.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reallocr.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reallocr.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reallocr.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-freer.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-freer.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-freer.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-impure.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mallocr.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mallocr.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mallocr.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memmove.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memmove.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memmove.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mlock.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mlock.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mlock.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-sbrkr.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-sbrkr.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-sbrkr.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reent.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reent.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reent.o)
+ .text.cleanup_glue
+                0x0000000000000000       0x1c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reent.o)
+ .text._reclaim_reent
+                0x0000000000000000       0x88 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reent.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libnosys.a(sbrk.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libnosys.a(sbrk.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libnosys.a(sbrk.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x0000000000000000 0x0000000000040000 xr
+SRAM             0x0000000020000000 0x0000000000008000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+LOAD CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/startup_gcc.c.obj
+LOAD CMakeFiles/arm_main.axf.dir/opt/tivaware/utils/ringbuf.c.obj
+LOAD CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/duration.cpp.obj
+LOAD CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/time.cpp.obj
+LOAD CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/tivac_hardware.cpp.obj
+LOAD CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/usb_serial_structs.c.obj
+LOAD /opt/tivaware/usblib/gcc/libusb.a
+LOAD /opt/tivaware/driverlib/gcc/libdriver.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libstdc++.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libm.a
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libm.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libnosys.a
+END GROUP
+
+.text           0x0000000000000000     0x5068
+                0x0000000000000000                . = ALIGN (0x4)
+                0x0000000000000000                _text = .
+ *(.isr_vector)
+ .isr_vector    0x0000000000000000      0x26c CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/startup_gcc.c.obj
+                0x0000000000000000                g_pfnVectors
+ *(.text .text* .gnu.linkonce.t.*)
+ .text._ZNK8std_msgs4Time9serializeEPh
+                0x000000000000026c       0x28 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x000000000000026c                std_msgs::Time::serialize(unsigned char*) const
+ .text._ZN8std_msgs4Time11deserializeEPh
+                0x0000000000000294       0x3c CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000000294                std_msgs::Time::deserialize(unsigned char*)
+ .text._ZN8std_msgs4Time7getTypeEv
+                0x00000000000002d0        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x00000000000002d0                std_msgs::Time::getType()
+ .text._ZN8std_msgs4Time6getMD5Ev
+                0x00000000000002d8        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x00000000000002d8                std_msgs::Time::getMD5()
+ .text._ZN14rosserial_msgs9TopicInfo7getTypeEv
+                0x00000000000002e0        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x00000000000002e0                rosserial_msgs::TopicInfo::getType()
+ .text._ZN14rosserial_msgs9TopicInfo6getMD5Ev
+                0x00000000000002e8        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x00000000000002e8                rosserial_msgs::TopicInfo::getMD5()
+ .text._ZN14rosserial_msgs3Log7getTypeEv
+                0x00000000000002f0        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x00000000000002f0                rosserial_msgs::Log::getType()
+ .text._ZN14rosserial_msgs3Log6getMD5Ev
+                0x00000000000002f8        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x00000000000002f8                rosserial_msgs::Log::getMD5()
+ .text._ZN14rosserial_msgs20RequestParamResponse7getTypeEv
+                0x0000000000000300        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000000300                rosserial_msgs::RequestParamResponse::getType()
+ .text._ZN14rosserial_msgs20RequestParamResponse6getMD5Ev
+                0x0000000000000308        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000000308                rosserial_msgs::RequestParamResponse::getMD5()
+ .text._ZN13TivaCHardware17SystickIntHandlerEv
+                0x0000000000000310       0x10 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000000310                TivaCHardware::SystickIntHandler()
+ .text._ZNK8std_msgs5Int329serializeEPh
+                0x0000000000000320       0x14 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000000320                std_msgs::Int32::serialize(unsigned char*) const
+ .text._ZN8std_msgs5Int3211deserializeEPh
+                0x0000000000000334       0x1a CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000000334                std_msgs::Int32::deserialize(unsigned char*)
+ *fill*         0x000000000000034e        0x2 
+ .text._ZN8std_msgs5Int327getTypeEv
+                0x0000000000000350        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000000350                std_msgs::Int32::getType()
+ .text._ZN8std_msgs5Int326getMD5Ev
+                0x0000000000000358        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000000358                std_msgs::Int32::getMD5()
+ .text._ZN3ros10SubscriberIN8std_msgs5Int32EvE8callbackEPh
+                0x0000000000000360       0x18 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000000360                ros::Subscriber<std_msgs::Int32, void>::callback(unsigned char*)
+ .text._ZN3ros10SubscriberIN8std_msgs5Int32EvE15getEndpointTypeEv
+                0x0000000000000378        0x4 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000000378                ros::Subscriber<std_msgs::Int32, void>::getEndpointType()
+ .text._ZN3ros10SubscriberIN8std_msgs5Int32EvE10getMsgTypeEv
+                0x000000000000037c        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x000000000000037c                ros::Subscriber<std_msgs::Int32, void>::getMsgType()
+ .text._ZN3ros10SubscriberIN8std_msgs5Int32EvE9getMsgMD5Ev
+                0x0000000000000384        0x8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000000384                ros::Subscriber<std_msgs::Int32, void>::getMsgMD5()
+ .text._ZN3ros11NodeHandle_I13TivaCHardwareLi25ELi25ELi512ELi512EE9connectedEv
+                0x000000000000038c        0x6 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x000000000000038c                ros::NodeHandle_<TivaCHardware, 25, 25, 512, 512>::connected()
+ *fill*         0x0000000000000392        0x2 
+ .text._Z9messageCbRKN8std_msgs5Int32E
+                0x0000000000000394       0x14 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000000394                messageCb(std_msgs::Int32 const&)
+ .text._ZN3ros11NodeHandle_I13TivaCHardwareLi25ELi25ELi512ELi512EE7publishEiPKNS_3MsgE
+                0x00000000000003a8       0xbc CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x00000000000003a8                ros::NodeHandle_<TivaCHardware, 25, 25, 512, 512>::publish(int, ros::Msg const*)
+ .text._ZN13TivaCHardware4initEv
+                0x0000000000000464       0xc0 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000000464                TivaCHardware::init()
+ .text._Z8init_pwmv
+                0x0000000000000524       0x8c CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000000524                init_pwm()
+ .text._ZN3ros3Msg8varToArrIPhmEEvT_T0_
+                0x00000000000005b0       0x12 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x00000000000005b0                void ros::Msg::varToArr<unsigned char*, unsigned long>(unsigned char*, unsigned long)
+ .text._ZNK14rosserial_msgs20RequestParamResponse9serializeEPh
+                0x00000000000005c2       0xe2 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x00000000000005c2                rosserial_msgs::RequestParamResponse::serialize(unsigned char*) const
+ .text._ZNK14rosserial_msgs3Log9serializeEPh
+                0x00000000000006a4       0x2c CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x00000000000006a4                rosserial_msgs::Log::serialize(unsigned char*) const
+ .text._ZNK14rosserial_msgs9TopicInfo9serializeEPh
+                0x00000000000006d0       0x86 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x00000000000006d0                rosserial_msgs::TopicInfo::serialize(unsigned char*) const
+ .text._ZN3ros3Msg8arrToVarImPhEEvRT_T0_
+                0x0000000000000756       0x1a CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000000756                void ros::Msg::arrToVar<unsigned long, unsigned char*>(unsigned long&, unsigned char*)
+ .text._ZN14rosserial_msgs3Log11deserializeEPh
+                0x0000000000000770       0x36 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000000770                rosserial_msgs::Log::deserialize(unsigned char*)
+ .text._ZN14rosserial_msgs9TopicInfo11deserializeEPh
+                0x00000000000007a6       0xb6 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x00000000000007a6                rosserial_msgs::TopicInfo::deserialize(unsigned char*)
+ .text._ZN14rosserial_msgs20RequestParamResponse11deserializeEPh
+                0x000000000000085c      0x148 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x000000000000085c                rosserial_msgs::RequestParamResponse::deserialize(unsigned char*)
+ .text._ZN3ros11NodeHandle_I13TivaCHardwareLi25ELi25ELi512ELi512EE15requestSyncTimeEv
+                0x00000000000009a4       0x2c CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x00000000000009a4                ros::NodeHandle_<TivaCHardware, 25, 25, 512, 512>::requestSyncTime()
+ .text._ZN3ros11NodeHandle_I13TivaCHardwareLi25ELi25ELi512ELi512EE15negotiateTopicsEv
+                0x00000000000009d0       0xb8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x00000000000009d0                ros::NodeHandle_<TivaCHardware, 25, 25, 512, 512>::negotiateTopics()
+ .text._ZN3ros11NodeHandle_I13TivaCHardwareLi25ELi25ELi512ELi512EE8spinOnceEv
+                0x0000000000000a88      0x260 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000000a88                ros::NodeHandle_<TivaCHardware, 25, 25, 512, 512>::spinOnce()
+ .text.startup.main
+                0x0000000000000ce8       0x90 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000000ce8                main
+ .text.startup._GLOBAL__sub_I_nh
+                0x0000000000000d78       0xa8 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .text.NmiSR    0x0000000000000e20        0x2 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/startup_gcc.c.obj
+ .text.FaultISR
+                0x0000000000000e22        0x2 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/startup_gcc.c.obj
+ .text.IntDefaultHandler
+                0x0000000000000e24        0x2 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/startup_gcc.c.obj
+ *fill*         0x0000000000000e26        0x2 
+ .text.ResetISR
+                0x0000000000000e28       0x98 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/startup_gcc.c.obj
+                0x0000000000000e28                ResetISR
+ .text._ZN3ros16normalizeSecNSecERmS0_
+                0x0000000000000ec0       0x1c CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/time.cpp.obj
+                0x0000000000000ec0                ros::normalizeSecNSec(unsigned long&, unsigned long&)
+ .text.TxHandler
+                0x0000000000000edc        0x4 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/usb_serial_structs.c.obj
+                0x0000000000000edc                TxHandler
+ .text.RxHandler
+                0x0000000000000ee0       0x14 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/usb_serial_structs.c.obj
+                0x0000000000000ee0                RxHandler
+ .text.ControlHandler
+                0x0000000000000ef4       0x34 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/usb_serial_structs.c.obj
+                0x0000000000000ef4                ControlHandler
+ .text.ScheduleNextTransmission
+                0x0000000000000f28       0x98 /opt/tivaware/usblib/gcc/libusb.a(usbbuffer.o)
+ .text.USBBufferInit
+                0x0000000000000fc0       0x16 /opt/tivaware/usblib/gcc/libusb.a(usbbuffer.o)
+                0x0000000000000fc0                USBBufferInit
+ .text.USBBufferWrite
+                0x0000000000000fd6       0x2e /opt/tivaware/usblib/gcc/libusb.a(usbbuffer.o)
+                0x0000000000000fd6                USBBufferWrite
+ .text.USBBufferFlush
+                0x0000000000001004        0x6 /opt/tivaware/usblib/gcc/libusb.a(usbbuffer.o)
+                0x0000000000001004                USBBufferFlush
+ .text.USBBufferRead
+                0x000000000000100a       0x26 /opt/tivaware/usblib/gcc/libusb.a(usbbuffer.o)
+                0x000000000000100a                USBBufferRead
+ .text.USBBufferDataAvailable
+                0x0000000000001030        0x6 /opt/tivaware/usblib/gcc/libusb.a(usbbuffer.o)
+                0x0000000000001030                USBBufferDataAvailable
+ .text.USBBufferEventCallback
+                0x0000000000001036      0x13c /opt/tivaware/usblib/gcc/libusb.a(usbbuffer.o)
+                0x0000000000001036                USBBufferEventCallback
+ .text.SetDeferredOpFlag
+                0x0000000000001172       0x18 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .text.DeviceConsumedAllData
+                0x000000000000118a       0x16 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .text.SendBreak
+                0x00000000000011a0       0x3c /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .text.SendLineCodingChange
+                0x00000000000011dc       0x24 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .text.SendLineStateChange
+                0x0000000000001200       0x24 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .text.HandleConfigChange
+                0x0000000000001224       0x32 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .text.HandleDevice
+                0x0000000000001256       0x9a /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .text.HandleDisconnect
+                0x00000000000012f0       0x1e /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .text.HandleSuspend
+                0x000000000000130e       0x14 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .text.HandleResume
+                0x0000000000001322       0x14 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .text.SendSerialState
+                0x0000000000001336       0x90 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .text.HandleEP0Data
+                0x00000000000013c6       0x4c /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .text.HandleRequests
+                0x0000000000001412       0xfe /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .text.CDCTickHandler
+                0x0000000000001510       0x9e /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .text.ProcessDataFromHost
+                0x00000000000015ae       0x74 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x00000000000015ae                ProcessDataFromHost
+ .text.ProcessNotificationToHost
+                0x0000000000001622       0x34 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000000001622                ProcessNotificationToHost
+ *fill*         0x0000000000001656        0x2 
+ .text.ProcessDataToHost
+                0x0000000000001658       0x60 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000000001658                ProcessDataToHost
+ .text.HandleEndpoints
+                0x00000000000016b8       0x4c /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .text.USBDCDCCompositeInit
+                0x0000000000001704       0xe8 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000000001704                USBDCDCCompositeInit
+ .text.USBDCDCInit
+                0x00000000000017ec       0x4c /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x00000000000017ec                USBDCDCInit
+ .text.USBDCDCPacketWrite
+                0x0000000000001838       0x5c /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000000001838                USBDCDCPacketWrite
+ .text.USBDCDCPacketRead
+                0x0000000000001894       0x90 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000000001894                USBDCDCPacketRead
+ .text.USBDCDCTxPacketAvailable
+                0x0000000000001924       0x14 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000000001924                USBDCDCTxPacketAvailable
+ .text.USBDCDCRxPacketAvailable
+                0x0000000000001938       0x30 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000000001938                USBDCDCRxPacketAvailable
+ .text.USBDSetAddress
+                0x0000000000001968       0x24 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .text.USBDEP0StateTx.isra.0
+                0x000000000000198c       0x70 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .text.USBDGetConfiguration
+                0x00000000000019fc       0x34 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .text.USBDEP0StateTxConfig.isra.1
+                0x0000000000001a30      0x148 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .text.USBDCDDeviceInfoInit
+                0x0000000000001b78       0x48 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+                0x0000000000001b78                USBDCDDeviceInfoInit
+ .text.USBDCDInit
+                0x0000000000001bc0      0x150 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+                0x0000000000001bc0                USBDCDInit
+ .text.USBDCDRequestDataEP0
+                0x0000000000001d10       0x14 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+                0x0000000000001d10                USBDCDRequestDataEP0
+ .text.USBDCDSendDataEP0
+                0x0000000000001d24       0x10 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+                0x0000000000001d24                USBDCDSendDataEP0
+ .text.USBDCDStallEP0
+                0x0000000000001d34       0x1c /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+                0x0000000000001d34                USBDCDStallEP0
+ .text.USBDReadAndDispatchRequest.isra.2
+                0x0000000000001d50       0x68 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .text.USBDSyncFrame
+                0x0000000000001db8       0x1c /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .text.USBDSetInterface
+                0x0000000000001dd4       0xa0 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .text.USBDGetInterface
+                0x0000000000001e74       0x48 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .text.USBDSetConfiguration
+                0x0000000000001ebc       0x94 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .text.USBDSetDescriptor
+                0x0000000000001f50       0x1c /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .text.USBDGetDescriptor
+                0x0000000000001f6c      0x12c /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .text.USBDSetFeature
+                0x0000000000002098       0x64 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .text.USBDClearFeature
+                0x00000000000020fc       0x78 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .text.USBDGetStatus
+                0x0000000000002174       0x70 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .text.USBDCDFeatureGet
+                0x00000000000021e4       0x18 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+                0x00000000000021e4                USBDCDFeatureGet
+ .text.USBDeviceResumeTickHandler
+                0x00000000000021fc       0x54 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+                0x00000000000021fc                USBDeviceResumeTickHandler
+ .text.USBDeviceEnumHandler
+                0x0000000000002250       0xcc /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+                0x0000000000002250                USBDeviceEnumHandler
+ .text.USBDeviceEnumResetHandler
+                0x000000000000231c       0x44 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+                0x000000000000231c                USBDeviceEnumResetHandler
+ .text.USBDeviceIntHandlerInternal
+                0x0000000000002360      0x140 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+                0x0000000000002360                USBDeviceIntHandlerInternal
+ .text.USB0DeviceIntHandler
+                0x00000000000024a0       0x18 /opt/tivaware/usblib/gcc/libusb.a(usbdhandler.o)
+                0x00000000000024a0                USB0DeviceIntHandler
+ .text.uDMAUSBChannelStatus
+                0x00000000000024b8       0x22 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.DMAUSBIntStatusClear
+                0x00000000000024da        0xe /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.uDMAUSBChannelIntEnable
+                0x00000000000024e8        0x2 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.uDMAUSBChannelIntDisable
+                0x00000000000024ea        0x2 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.iDMAUSBUnitSizeSet
+                0x00000000000024ec        0x2 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.iDMAUSBArbSizeSet
+                0x00000000000024ee        0x2 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.DMAUSBStatus
+                0x00000000000024f0        0x4 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.iDMAUSBChannelRelease
+                0x00000000000024f4       0x3a /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.iDMAUSBChannelAllocate
+                0x000000000000252e       0x82 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.iDMAUSBChannelDisable
+                0x00000000000025b0       0x32 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.iDMAUSBChannelIntDisable
+                0x00000000000025e2        0x8 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.iDMAUSBChannelIntEnable
+                0x00000000000025ea        0x8 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.iDMAUSBChannelEnable
+                0x00000000000025f2       0x50 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.iDMAUSBIntStatus
+                0x0000000000002642        0x6 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.uDMAUSBUnitSizeSet
+                0x0000000000002648       0x56 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.uDMAUSBArbSizeSet
+                0x000000000000269e       0x6e /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.uDMAUSBIntStatus
+                0x000000000000270c       0x2a /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.uDMAUSBChannelRelease
+                0x0000000000002736       0x56 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.uDMAUSBChannelEnable
+                0x000000000000278c       0x6a /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.uDMAUSBChannelDisable
+                0x00000000000027f6       0x4e /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.uDMAUSBChannelAllocate
+                0x0000000000002844       0xb4 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.DMAUSBIntHandler
+                0x00000000000028f8       0x30 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.iDMAUSBTransfer
+                0x0000000000002928       0xe0 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.iDMAUSBChannelStatus
+                0x0000000000002a08       0x34 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .text.uDMAUSBTransfer
+                0x0000000000002a3c       0xba /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ *fill*         0x0000000000002af6        0x2 
+ .text.USBLibDMAInit
+                0x0000000000002af8      0x164 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+                0x0000000000002af8                USBLibDMAInit
+ .text.USBStackModeSet
+                0x0000000000002c5c       0x1c /opt/tivaware/usblib/gcc/libusb.a(usbmode.o)
+                0x0000000000002c5c                USBStackModeSet
+ .text.UpdateIndexAtomic
+                0x0000000000002c78       0x2c /opt/tivaware/usblib/gcc/libusb.a(usbringbuf.o)
+ .text.USBRingBufFlush
+                0x0000000000002ca4       0x18 /opt/tivaware/usblib/gcc/libusb.a(usbringbuf.o)
+                0x0000000000002ca4                USBRingBufFlush
+ .text.USBRingBufUsed
+                0x0000000000002cbc       0x12 /opt/tivaware/usblib/gcc/libusb.a(usbringbuf.o)
+                0x0000000000002cbc                USBRingBufUsed
+ .text.USBRingBufFree
+                0x0000000000002cce        0xe /opt/tivaware/usblib/gcc/libusb.a(usbringbuf.o)
+                0x0000000000002cce                USBRingBufFree
+ .text.USBRingBufContigUsed
+                0x0000000000002cdc       0x10 /opt/tivaware/usblib/gcc/libusb.a(usbringbuf.o)
+                0x0000000000002cdc                USBRingBufContigUsed
+ .text.USBRingBufContigFree
+                0x0000000000002cec       0x1c /opt/tivaware/usblib/gcc/libusb.a(usbringbuf.o)
+                0x0000000000002cec                USBRingBufContigFree
+ .text.USBRingBufReadOne
+                0x0000000000002d08       0x18 /opt/tivaware/usblib/gcc/libusb.a(usbringbuf.o)
+                0x0000000000002d08                USBRingBufReadOne
+ .text.USBRingBufRead
+                0x0000000000002d20       0x1a /opt/tivaware/usblib/gcc/libusb.a(usbringbuf.o)
+                0x0000000000002d20                USBRingBufRead
+ .text.USBRingBufAdvanceRead
+                0x0000000000002d3a       0x20 /opt/tivaware/usblib/gcc/libusb.a(usbringbuf.o)
+                0x0000000000002d3a                USBRingBufAdvanceRead
+ .text.USBRingBufAdvanceWrite
+                0x0000000000002d5a       0x36 /opt/tivaware/usblib/gcc/libusb.a(usbringbuf.o)
+                0x0000000000002d5a                USBRingBufAdvanceWrite
+ .text.USBRingBufWriteOne
+                0x0000000000002d90       0x12 /opt/tivaware/usblib/gcc/libusb.a(usbringbuf.o)
+                0x0000000000002d90                USBRingBufWriteOne
+ .text.USBRingBufWrite
+                0x0000000000002da2       0x1a /opt/tivaware/usblib/gcc/libusb.a(usbringbuf.o)
+                0x0000000000002da2                USBRingBufWrite
+ .text.USBRingBufInit
+                0x0000000000002dbc        0xc /opt/tivaware/usblib/gcc/libusb.a(usbringbuf.o)
+                0x0000000000002dbc                USBRingBufInit
+ .text.InternalUSBTickInit
+                0x0000000000002dc8       0x2c /opt/tivaware/usblib/gcc/libusb.a(usbtick.o)
+                0x0000000000002dc8                InternalUSBTickInit
+ .text.InternalUSBRegisterTickHandler
+                0x0000000000002df4       0x30 /opt/tivaware/usblib/gcc/libusb.a(usbtick.o)
+                0x0000000000002df4                InternalUSBRegisterTickHandler
+ .text.InternalUSBStartOfFrameTick
+                0x0000000000002e24       0x34 /opt/tivaware/usblib/gcc/libusb.a(usbtick.o)
+                0x0000000000002e24                InternalUSBStartOfFrameTick
+ .text.ULPIConfigSet
+                0x0000000000002e58       0x56 /opt/tivaware/usblib/gcc/libusb.a(usbulpi.o)
+                0x0000000000002e58                ULPIConfigSet
+ .text.NextConfigDescGet
+                0x0000000000002eae       0x32 /opt/tivaware/usblib/gcc/libusb.a(usbdcdesc.o)
+ .text.USBDCDConfigDescGetSize
+                0x0000000000002ee0       0x1e /opt/tivaware/usblib/gcc/libusb.a(usbdcdesc.o)
+                0x0000000000002ee0                USBDCDConfigDescGetSize
+ .text.USBDCDConfigDescGetNum
+                0x0000000000002efe       0x2a /opt/tivaware/usblib/gcc/libusb.a(usbdcdesc.o)
+                0x0000000000002efe                USBDCDConfigDescGetNum
+ .text.USBDCDConfigDescGet
+                0x0000000000002f28       0x58 /opt/tivaware/usblib/gcc/libusb.a(usbdcdesc.o)
+                0x0000000000002f28                USBDCDConfigDescGet
+ .text.USBDCDConfigGetInterface
+                0x0000000000002f80       0x56 /opt/tivaware/usblib/gcc/libusb.a(usbdcdesc.o)
+                0x0000000000002f80                USBDCDConfigGetInterface
+ .text.USBDCDConfigGetInterfaceEndpoint
+                0x0000000000002fd6       0x3e /opt/tivaware/usblib/gcc/libusb.a(usbdcdesc.o)
+                0x0000000000002fd6                USBDCDConfigGetInterfaceEndpoint
+ .text.GetEPDescriptorType
+                0x0000000000003014       0x46 /opt/tivaware/usblib/gcc/libusb.a(usbdconfig.o)
+ *fill*         0x000000000000305a        0x2 
+ .text.USBDeviceConfig
+                0x000000000000305c      0x160 /opt/tivaware/usblib/gcc/libusb.a(usbdconfig.o)
+                0x000000000000305c                USBDeviceConfig
+ .text.USBDeviceConfigAlternate
+                0x00000000000031bc       0x8c /opt/tivaware/usblib/gcc/libusb.a(usbdconfig.o)
+                0x00000000000031bc                USBDeviceConfigAlternate
+ .text.USBDescGetNum
+                0x0000000000003248       0x24 /opt/tivaware/usblib/gcc/libusb.a(usbdesc.o)
+                0x0000000000003248                USBDescGetNum
+ .text.USBDescGet
+                0x000000000000326c       0x28 /opt/tivaware/usblib/gcc/libusb.a(usbdesc.o)
+                0x000000000000326c                USBDescGet
+ .text.GPIODirModeSet
+                0x0000000000003294       0x2e /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+                0x0000000000003294                GPIODirModeSet
+ .text.GPIOPadConfigSet
+                0x00000000000032c2      0x12c /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+                0x00000000000032c2                GPIOPadConfigSet
+ .text.GPIOPinTypePWM
+                0x00000000000033ee       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+                0x00000000000033ee                GPIOPinTypePWM
+ *fill*         0x000000000000340a        0x2 
+ .text.GPIOPinConfigure
+                0x000000000000340c       0x44 /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+                0x000000000000340c                GPIOPinConfigure
+ .text.IntMasterEnable
+                0x0000000000003450        0xe /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+                0x0000000000003450                IntMasterEnable
+ .text.IntMasterDisable
+                0x000000000000345e        0xe /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+                0x000000000000345e                IntMasterDisable
+ .text.IntRegister
+                0x000000000000346c       0x30 /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+                0x000000000000346c                IntRegister
+ .text.IntEnable
+                0x000000000000349c       0x5c /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+                0x000000000000349c                IntEnable
+ .text.IntDisable
+                0x00000000000034f8       0x5c /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+                0x00000000000034f8                IntDisable
+ .text.IntIsEnabled
+                0x0000000000003554       0x64 /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+                0x0000000000003554                IntIsEnabled
+ .text.PWMGenConfigure
+                0x00000000000035b8       0x2c /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+                0x00000000000035b8                PWMGenConfigure
+ .text.PWMGenPeriodSet
+                0x00000000000035e4       0x12 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+                0x00000000000035e4                PWMGenPeriodSet
+ .text.PWMGenEnable
+                0x00000000000035f6        0xa /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+                0x00000000000035f6                PWMGenEnable
+ .text.PWMPulseWidthSet
+                0x0000000000003600       0x1e /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+                0x0000000000003600                PWMPulseWidthSet
+ .text.PWMOutputState
+                0x000000000000361e       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+                0x000000000000361e                PWMOutputState
+ *fill*         0x000000000000362e        0x2 
+ .text.SysCtlPeripheralReady
+                0x0000000000003630       0x28 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+                0x0000000000003630                SysCtlPeripheralReady
+ .text.SysCtlPeripheralReset
+                0x0000000000003658       0x3c /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+                0x0000000000003658                SysCtlPeripheralReset
+ .text.SysCtlPeripheralEnable
+                0x0000000000003694       0x24 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+                0x0000000000003694                SysCtlPeripheralEnable
+ .text.SysCtlPWMClockSet
+                0x00000000000036b8       0x14 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+                0x00000000000036b8                SysCtlPWMClockSet
+ .text.SysCtlUSBPLLEnable
+                0x00000000000036cc       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+                0x00000000000036cc                SysCtlUSBPLLEnable
+ .text.SysTickIntRegister
+                0x00000000000036dc       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(systick.o)
+                0x00000000000036dc                SysTickIntRegister
+ .text.uDMAChannelEnable
+                0x00000000000036f8       0x14 /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+                0x00000000000036f8                uDMAChannelEnable
+ .text.uDMAChannelDisable
+                0x000000000000370c       0x14 /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+                0x000000000000370c                uDMAChannelDisable
+ .text.uDMAChannelAttributeDisable
+                0x0000000000003720       0x48 /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+                0x0000000000003720                uDMAChannelAttributeDisable
+ .text.uDMAChannelControlSet
+                0x0000000000003768       0x20 /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+                0x0000000000003768                uDMAChannelControlSet
+ .text.uDMAChannelTransferSet
+                0x0000000000003788       0x84 /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+                0x0000000000003788                uDMAChannelTransferSet
+ .text.uDMAChannelModeGet
+                0x000000000000380c       0x24 /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+                0x000000000000380c                uDMAChannelModeGet
+ .text._USBIntNumberGet.isra.0
+                0x0000000000003830       0x34 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .text.USBHostResume
+                0x0000000000003864       0x12 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003864                USBHostResume
+ *fill*         0x0000000000003876        0x2 
+ .text.USBIntEnableControl
+                0x0000000000003878       0x28 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003878                USBIntEnableControl
+ .text.USBIntStatusControl
+                0x00000000000038a0       0x3c /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x00000000000038a0                USBIntStatusControl
+ .text.USBIntEnableEndpoint
+                0x00000000000038dc       0x18 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x00000000000038dc                USBIntEnableEndpoint
+ .text.USBIntStatusEndpoint
+                0x00000000000038f4        0xc /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x00000000000038f4                USBIntStatusEndpoint
+ .text.USBIntRegister
+                0x0000000000003900       0x1a /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003900                USBIntRegister
+ .text.USBEndpointStatus
+                0x000000000000391a       0x12 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x000000000000391a                USBEndpointStatus
+ .text.USBDevEndpointStatusClear
+                0x000000000000392c       0x58 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x000000000000392c                USBDevEndpointStatusClear
+ .text.USBDevEndpointStall
+                0x0000000000003984       0x30 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003984                USBDevEndpointStall
+ .text.USBDevEndpointStallClear
+                0x00000000000039b4       0x42 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x00000000000039b4                USBDevEndpointStallClear
+ .text.USBDevConnect
+                0x00000000000039f6        0xa /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x00000000000039f6                USBDevConnect
+ .text.USBDevDisconnect
+                0x0000000000003a00        0xa /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003a00                USBDevDisconnect
+ .text.USBDevAddrSet
+                0x0000000000003a0a        0x6 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003a0a                USBDevAddrSet
+ .text.USBDevEndpointConfigSet
+                0x0000000000003a10       0x80 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003a10                USBDevEndpointConfigSet
+ .text.USBFIFOConfigSet
+                0x0000000000003a90       0x44 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003a90                USBFIFOConfigSet
+ .text.USBEndpointDMAConfigSet
+                0x0000000000003ad4       0x4c /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003ad4                USBEndpointDMAConfigSet
+ .text.USBEndpointDMAEnable
+                0x0000000000003b20       0x1e /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003b20                USBEndpointDMAEnable
+ .text.USBEndpointDMADisable
+                0x0000000000003b3e       0x1e /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003b3e                USBEndpointDMADisable
+ .text.USBEndpointDataAvail
+                0x0000000000003b5c       0x20 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003b5c                USBEndpointDataAvail
+ .text.USBEndpointDataGet
+                0x0000000000003b7c       0x48 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003b7c                USBEndpointDataGet
+ .text.USBDevEndpointDataAck
+                0x0000000000003bc4       0x1e /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003bc4                USBDevEndpointDataAck
+ .text.USBEndpointDataPut
+                0x0000000000003be2       0x32 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003be2                USBEndpointDataPut
+ .text.USBEndpointDataSend
+                0x0000000000003c14       0x2e /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003c14                USBEndpointDataSend
+ .text.USBFIFOAddrGet
+                0x0000000000003c42        0x8 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003c42                USBFIFOAddrGet
+ .text.USBEndpointDMAChannel
+                0x0000000000003c4a       0x1c /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003c4a                USBEndpointDMAChannel
+ .text.USBDevMode
+                0x0000000000003c66        0x8 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003c66                USBDevMode
+ .text.USBOTGMode
+                0x0000000000003c6e        0x8 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003c6e                USBOTGMode
+ .text.USBEndpointPacketCountSet
+                0x0000000000003c76       0x12 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003c76                USBEndpointPacketCountSet
+ .text.USBControllerVersion
+                0x0000000000003c88        0xa /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003c88                USBControllerVersion
+ .text.USBClockEnable
+                0x0000000000003c92        0xa /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003c92                USBClockEnable
+ .text.USBDMAChannelIntEnable
+                0x0000000000003c9c       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003c9c                USBDMAChannelIntEnable
+ .text.USBDMAChannelIntDisable
+                0x0000000000003cac       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003cac                USBDMAChannelIntDisable
+ .text.USBDMAChannelIntStatus
+                0x0000000000003cbc        0x6 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003cbc                USBDMAChannelIntStatus
+ .text.USBDMAChannelEnable
+                0x0000000000003cc2       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003cc2                USBDMAChannelEnable
+ .text.USBDMAChannelDisable
+                0x0000000000003cd2       0x10 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003cd2                USBDMAChannelDisable
+ .text.USBDMAChannelConfigSet
+                0x0000000000003ce2       0x12 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003ce2                USBDMAChannelConfigSet
+ .text.USBDMAChannelStatus
+                0x0000000000003cf4        0xe /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003cf4                USBDMAChannelStatus
+ .text.USBDMAChannelAddressSet
+                0x0000000000003d02        0xa /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003d02                USBDMAChannelAddressSet
+ .text.USBDMAChannelCountSet
+                0x0000000000003d0c        0xa /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003d0c                USBDMAChannelCountSet
+ .text.USBULPIEnable
+                0x0000000000003d16        0xe /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003d16                USBULPIEnable
+ .text.USBULPIDisable
+                0x0000000000003d24        0xe /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003d24                USBULPIDisable
+ .text.USBULPIRegRead
+                0x0000000000003d32       0x20 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003d32                USBULPIRegRead
+ .text.USBULPIRegWrite
+                0x0000000000003d52       0x20 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003d52                USBULPIRegWrite
+ .text.USBDevLPMConfig
+                0x0000000000003d72        0x8 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003d72                USBDevLPMConfig
+ .text.USBDevLPMEnable
+                0x0000000000003d7a        0xe /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003d7a                USBDevLPMEnable
+ .text.USBDevLPMDisable
+                0x0000000000003d88        0xe /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003d88                USBDevLPMDisable
+ .text.USBLPMIntStatus
+                0x0000000000003d96        0x6 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003d96                USBLPMIntStatus
+ .text.USBLPMIntEnable
+                0x0000000000003d9c        0xe /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+                0x0000000000003d9c                USBLPMIntEnable
+ .text.CPUcpsid
+                0x0000000000003daa        0x8 /opt/tivaware/driverlib/gcc/libdriver.a(cpu.o)
+                0x0000000000003daa                CPUcpsid
+ .text.CPUcpsie
+                0x0000000000003db2        0x8 /opt/tivaware/driverlib/gcc/libdriver.a(cpu.o)
+                0x0000000000003db2                CPUcpsie
+ *fill*         0x0000000000003dba        0x2 
+ .text          0x0000000000003dbc      0x134 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memcpy.o)
+                0x0000000000003dbc                memcpy
+ .text.realloc  0x0000000000003ef0       0x10 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-realloc.o)
+                0x0000000000003ef0                realloc
+ .text._realloc_r
+                0x0000000000003f00      0x3ec /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reallocr.o)
+                0x0000000000003f00                _realloc_r
+ .text.strlen   0x00000000000042ec       0x5c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+                0x00000000000042ec                strlen
+ .text._malloc_trim_r
+                0x0000000000004348       0x9c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-freer.o)
+                0x0000000000004348                _malloc_trim_r
+ .text._free_r  0x00000000000043e4      0x1b0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-freer.o)
+                0x00000000000043e4                _free_r
+ .text._malloc_r
+                0x0000000000004594      0x524 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mallocr.o)
+                0x0000000000004594                _malloc_r
+ .text.memmove  0x0000000000004ab8       0xc8 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memmove.o)
+                0x0000000000004ab8                memmove
+ .text.__malloc_lock
+                0x0000000000004b80        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mlock.o)
+                0x0000000000004b80                __malloc_lock
+ .text.__malloc_unlock
+                0x0000000000004b84        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mlock.o)
+                0x0000000000004b84                __malloc_unlock
+ .text._sbrk_r  0x0000000000004b88       0x24 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-sbrkr.o)
+                0x0000000000004b88                _sbrk_r
+ .text._sbrk    0x0000000000004bac       0x1c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libnosys.a(sbrk.o)
+                0x0000000000004bac                _sbrk
+ *(.glue_7t)
+ .glue_7t       0x0000000000004bc8        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x0000000000004bc8        0x0 linker stubs
+ *(.rodata .rodata* .gnu.linkonce.r.*)
+ .rodata._ZTVN8std_msgs4TimeE
+                0x0000000000004bc8       0x18 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000004bc8                vtable for std_msgs::Time
+ .rodata._ZTVN14rosserial_msgs9TopicInfoE
+                0x0000000000004be0       0x18 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000004be0                vtable for rosserial_msgs::TopicInfo
+ .rodata._ZTVN14rosserial_msgs3LogE
+                0x0000000000004bf8       0x18 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000004bf8                vtable for rosserial_msgs::Log
+ .rodata._ZTVN14rosserial_msgs20RequestParamResponseE
+                0x0000000000004c10       0x18 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000004c10                vtable for rosserial_msgs::RequestParamResponse
+ .rodata._ZTVN8std_msgs5Int32E
+                0x0000000000004c28       0x18 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000004c28                vtable for std_msgs::Int32
+ .rodata._ZTVN3ros11NodeHandle_I13TivaCHardwareLi25ELi25ELi512ELi512EEE
+                0x0000000000004c40       0x14 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000004c40                vtable for ros::NodeHandle_<TivaCHardware, 25, 25, 512, 512>
+ *fill*         0x0000000000004c54        0x4 
+ .rodata._ZTVN3ros10SubscriberIN8std_msgs5Int32EvEE
+                0x0000000000004c58       0x18 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000004c58                vtable for ros::Subscriber<std_msgs::Int32, void>
+ .rodata.str1.1
+                0x0000000000004c70      0x134 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                                        0x135 (size before relaxing)
+ .rodata._ZN14rosserial_msgsL12REQUESTPARAME
+                0x0000000000004da4       0x1c CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .rodata.g_ppui8StringDescriptors
+                0x0000000000004dc0       0x18 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/usb_serial_structs.c.obj
+                0x0000000000004dc0                g_ppui8StringDescriptors
+ .rodata.g_pui8ControlInterfaceString
+                0x0000000000004dd8       0x2c CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/usb_serial_structs.c.obj
+                0x0000000000004dd8                g_pui8ControlInterfaceString
+ .rodata.g_pui8ProductString
+                0x0000000000004e04       0x22 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/usb_serial_structs.c.obj
+                0x0000000000004e04                g_pui8ProductString
+ .rodata.g_pui8SerialNumberString
+                0x0000000000004e26       0x12 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/usb_serial_structs.c.obj
+                0x0000000000004e26                g_pui8SerialNumberString
+ .rodata.g_pui8LangDescriptor
+                0x0000000000004e38        0x4 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/usb_serial_structs.c.obj
+                0x0000000000004e38                g_pui8LangDescriptor
+ .rodata.g_pui8ConfigString
+                0x0000000000004e3c       0x36 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/usb_serial_structs.c.obj
+                0x0000000000004e3c                g_pui8ConfigString
+ .rodata.g_pui8ManufacturerString
+                0x0000000000004e72       0x24 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/usb_serial_structs.c.obj
+                0x0000000000004e72                g_pui8ManufacturerString
+ *fill*         0x0000000000004e96        0x2 
+ .rodata.g_sCDCHandlers
+                0x0000000000004e98       0x30 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000000004e98                g_sCDCHandlers
+ .rodata.g_sCDCCompSerConfigHeader
+                0x0000000000004ec8        0x8 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000000004ec8                g_sCDCCompSerConfigHeader
+ .rodata.g_pui8CDCSerDataInterface
+                0x0000000000004ed0       0x17 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000000004ed0                g_pui8CDCSerDataInterface
+ .rodata.g_pui8CDCSerDataInterfaceHS
+                0x0000000000004ee7       0x17 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000000004ee7                g_pui8CDCSerDataInterfaceHS
+ *fill*         0x0000000000004efe        0x2 
+ .rodata.g_sIADSerConfigSection
+                0x0000000000004f00        0x8 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000000004f00                g_sIADSerConfigSection
+ .rodata.g_ppCDCSerConfigDescriptors
+                0x0000000000004f08        0x4 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000000004f08                g_ppCDCSerConfigDescriptors
+ .rodata.g_sCDCSerDataInterfaceSectionHS
+                0x0000000000004f0c        0x8 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000000004f0c                g_sCDCSerDataInterfaceSectionHS
+ .rodata.g_sCDCSerConfigHeader
+                0x0000000000004f14        0x8 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000000004f14                g_sCDCSerConfigHeader
+ .rodata.g_sCDCSerCommInterfaceSection
+                0x0000000000004f1c        0x8 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000000004f1c                g_sCDCSerCommInterfaceSection
+ .rodata.g_sCDCSerConfigSection
+                0x0000000000004f24        0x8 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000000004f24                g_sCDCSerConfigSection
+ .rodata.g_sCDCCompSerConfigHeaderHS
+                0x0000000000004f2c        0x8 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000000004f2c                g_sCDCCompSerConfigHeaderHS
+ .rodata.g_sCDCSerDataInterfaceSection
+                0x0000000000004f34        0x8 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000000004f34                g_sCDCSerDataInterfaceSection
+ .rodata.g_pui8CDCSerCommInterface
+                0x0000000000004f3c       0x23 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000000004f3c                g_pui8CDCSerCommInterface
+ *fill*         0x0000000000004f5f        0x1 
+ .rodata.g_pCDCCompSerConfigDescriptorsHS
+                0x0000000000004f60        0x4 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000000004f60                g_pCDCCompSerConfigDescriptorsHS
+ .rodata.g_ppCDCSerConfigDescriptorsHS
+                0x0000000000004f64        0x4 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000000004f64                g_ppCDCSerConfigDescriptorsHS
+ .rodata.g_pCDCCompSerConfigDescriptors
+                0x0000000000004f68        0x4 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000000004f68                g_pCDCCompSerConfigDescriptors
+ .rodata.g_sCDCSerConfigHeaderHS
+                0x0000000000004f6c        0x8 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000000004f6c                g_sCDCSerConfigHeaderHS
+ .rodata.g_psUSBDStdRequests
+                0x0000000000004f74       0x34 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .rodata.g_pui32GPIOBaseAddrs
+                0x0000000000004fa8       0x90 /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .rodata.g_pui32Dii16Regs
+                0x0000000000005038       0x14 /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+ .rodata.g_pui32EnRegs
+                0x000000000000504c       0x14 /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+ .rodata.str1.4
+                0x0000000000005060        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-impure.o)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x0000000000005064                . = ALIGN (0x4)
+ *(.init)
+                0x0000000000005064                . = ALIGN (0x4)
+                0x0000000000005064                __preinit_array_start = .
+ *(SORT(.preinit_array*))
+ *(.preinit_array)
+                0x0000000000005064                __preinit_array_end = .
+                0x0000000000005064                . = ALIGN (0x4)
+                0x0000000000005064                __init_array_start = .
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x0000000000005064        0x4 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000000005068                __init_array_end = .
+                0x0000000000005068                . = ALIGN (0x4)
+ *(.fini)
+                0x0000000000005068                . = ALIGN (0x4)
+                0x0000000000005068                __fini_array_start = .
+ *(.fini_array)
+ *(SORT(.fini_array.*))
+                0x0000000000005068                __fini_array_end = .
+                0x0000000000005068                . = ALIGN (0x4)
+                0x0000000000005068                _etext = .
+
+.vfp11_veneer   0x0000000000005068        0x0
+ .vfp11_veneer  0x0000000000005068        0x0 linker stubs
+
+.v4_bx          0x0000000000005068        0x0
+ .v4_bx         0x0000000000005068        0x0 linker stubs
+
+.iplt           0x0000000000005068        0x0
+ .iplt          0x0000000000005068        0x0 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+
+.rel.dyn        0x0000000000005068        0x0
+ .rel.iplt      0x0000000000005068        0x0 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+
+.data           0x0000000020000000      0xbe4 load address 0x0000000000005068
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _data = .
+ *(vtable)
+ vtable         0x0000000020000000      0x26c /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+ *(.data .data* .gnu.linkonce.d.*)
+ .data.g_sRxBuffer
+                0x000000002000026c       0x38 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/usb_serial_structs.c.obj
+                0x000000002000026c                g_sRxBuffer
+ .data.g_sCDCDevice
+                0x00000000200002a4       0x60 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/usb_serial_structs.c.obj
+                0x00000000200002a4                g_sCDCDevice
+ .data.g_sTxBuffer
+                0x0000000020000304       0x38 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/usb_serial_structs.c.obj
+                0x0000000020000304                g_sTxBuffer
+ .data.g_psCDCCompSerSectionsHS
+                0x000000002000033c       0x10 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x000000002000033c                g_psCDCCompSerSectionsHS
+ .data.g_ui16MaxPacketSize
+                0x000000002000034c        0x2 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .data.g_pui8IADSerDescriptor
+                0x000000002000034e        0x8 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x000000002000034e                g_pui8IADSerDescriptor
+ *fill*         0x0000000020000356        0x2 
+ .data.g_psCDCSerSectionsHS
+                0x0000000020000358        0xc /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000020000358                g_psCDCSerSectionsHS
+ .data.g_psCDCCompSerSections
+                0x0000000020000364       0x10 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000020000364                g_psCDCCompSerSections
+ .data.g_pui8CDCSerDescriptor
+                0x0000000020000374        0x9 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000020000374                g_pui8CDCSerDescriptor
+ .data.g_pui8CDCSerDeviceDescriptor
+                0x000000002000037d       0x12 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x000000002000037d                g_pui8CDCSerDeviceDescriptor
+ *fill*         0x000000002000038f        0x1 
+ .data.g_psCDCSerSections
+                0x0000000020000390        0xc /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+                0x0000000020000390                g_psCDCSerSections
+ .data.g_ui32PLLDiv
+                0x000000002000039c        0x4 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .data.g_iUSBMode
+                0x00000000200003a0        0x1 /opt/tivaware/usblib/gcc/libusb.a(usbmode.o)
+                0x00000000200003a0                g_iUSBMode
+ *fill*         0x00000000200003a1        0x7 
+ .data.impure_data
+                0x00000000200003a8      0x428 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x00000000200007d0        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-impure.o)
+                0x00000000200007d0                _impure_ptr
+ .data.__malloc_av_
+                0x00000000200007d4      0x408 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mallocr.o)
+                0x00000000200007d4                __malloc_av_
+ .data.__malloc_trim_threshold
+                0x0000000020000bdc        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mallocr.o)
+                0x0000000020000bdc                __malloc_trim_threshold
+ .data.__malloc_sbrk_base
+                0x0000000020000be0        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mallocr.o)
+                0x0000000020000be0                __malloc_sbrk_base
+                0x0000000020000be4                _edata = .
+
+.igot.plt       0x0000000020000be4        0x0 load address 0x0000000000005c4c
+ .igot.plt      0x0000000020000be4        0x0 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+
+.bss            0x0000000020000be4      0x97c load address 0x0000000000005c4c
+                0x0000000020000be4                . = ALIGN (0x4)
+                0x0000000020000be4                _bss = .
+                0x0000000020000be4                __bss_start__ = _bss
+ *(.bss*)
+ .bss.nh        0x0000000020000be4      0x52c CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000020000be4                nh
+ .bss.sub       0x0000000020001110       0x1c CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                0x0000000020001110                sub
+ .bss.g_ui32milliseconds
+                0x000000002000112c        0x4 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/tivac_hardware.cpp.obj
+                0x000000002000112c                g_ui32milliseconds
+ .bss.g_bUSBConfigured
+                0x0000000020001130        0x1 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/usb_serial_structs.c.obj
+ *fill*         0x0000000020001131        0x3 
+ .bss.g_ui32ULPISupport
+                0x0000000020001134        0x4 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .bss.ui32SOFDivide.5256
+                0x0000000020001138        0x4 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .bss.g_pui8DataBufferIn
+                0x000000002000113c       0x40 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .bss.g_psUSBDMAInst
+                0x000000002000117c      0x110 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .bss.g_pfnUSBModeCallback
+                0x000000002000128c        0x4 /opt/tivaware/usblib/gcc/libusb.a(usbmode.o)
+ .bss.g_bUSBTimerInitialized
+                0x0000000020001290        0x1 /opt/tivaware/usblib/gcc/libusb.a(usbtick.o)
+                0x0000000020001290                g_bUSBTimerInitialized
+ *fill*         0x0000000020001291        0x3 
+ .bss.g_ui32USBSOFCount
+                0x0000000020001294        0x4 /opt/tivaware/usblib/gcc/libusb.a(usbtick.o)
+                0x0000000020001294                g_ui32USBSOFCount
+ .bss.g_ui32CurrentUSBTick
+                0x0000000020001298        0x4 /opt/tivaware/usblib/gcc/libusb.a(usbtick.o)
+                0x0000000020001298                g_ui32CurrentUSBTick
+ .bss.__malloc_max_total_mem
+                0x000000002000129c        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mallocr.o)
+                0x000000002000129c                __malloc_max_total_mem
+ .bss.__malloc_max_sbrked_mem
+                0x00000000200012a0        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mallocr.o)
+                0x00000000200012a0                __malloc_max_sbrked_mem
+ .bss.__malloc_top_pad
+                0x00000000200012a4        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mallocr.o)
+                0x00000000200012a4                __malloc_top_pad
+ .bss.__malloc_current_mallinfo
+                0x00000000200012a8       0x28 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mallocr.o)
+                0x00000000200012a8                __malloc_current_mallinfo
+ .bss.heap_end.4079
+                0x00000000200012d0        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libnosys.a(sbrk.o)
+ *(COMMON)
+ COMMON         0x00000000200012d4      0x200 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/usb_serial_structs.c.obj
+                0x00000000200012d4                g_pui8USBRxBuffer
+                0x00000000200013d4                g_pui8USBTxBuffer
+ COMMON         0x00000000200014d4       0x54 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+                0x00000000200014d4                g_psDCDInst
+                0x0000000020001524                g_ppsDevInfo
+ COMMON         0x0000000020001528       0x30 /opt/tivaware/usblib/gcc/libusb.a(usbtick.o)
+                0x0000000020001528                g_pvTickInstance
+                0x0000000020001540                g_pfnTickHandlers
+ COMMON         0x0000000020001558        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reent.o)
+                0x0000000020001558                errno
+                0x000000002000155c                . = ALIGN (0x4)
+                0x000000002000155c                _ebss = .
+                0x000000002000155c                __bss_end__ = _ebss
+                0x0000000020001560                . = ALIGN (0x8)
+ *fill*         0x000000002000155c        0x4 
+                [!provide]                        PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                [!provide]                        PROVIDE (__exidx_end, .)
+                0x0000000020001560                . = ALIGN (0x4)
+                0x0000000020001560                _end = .
+                0x0000000020001560                PROVIDE (end, _end)
+                0x0000000020008000                PROVIDE (_estack, (ORIGIN (SRAM) + LENGTH (SRAM)))
+OUTPUT(/home/steven/Documents/rover_tiva/catkin_ws/devel/arm_main.axf elf32-littlearm)
+
+.comment        0x0000000000000000       0x70
+ .comment       0x0000000000000000       0x38 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+                                         0x39 (size before relaxing)
+ .comment       0x0000000000000038       0x39 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/startup_gcc.c.obj
+ .comment       0x0000000000000038       0x39 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/time.cpp.obj
+ .comment       0x0000000000000038       0x39 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/tivac_hardware.cpp.obj
+ .comment       0x0000000000000038       0x39 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/usb_serial_structs.c.obj
+ .comment       0x0000000000000038       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbbuffer.o)
+ .comment       0x0000000000000038       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .comment       0x0000000000000038       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .comment       0x0000000000000038       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbdhandler.o)
+ .comment       0x0000000000000038       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .comment       0x0000000000000038       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbmode.o)
+ .comment       0x0000000000000038       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbringbuf.o)
+ .comment       0x0000000000000038       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbtick.o)
+ .comment       0x0000000000000038       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbulpi.o)
+ .comment       0x0000000000000038       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbdcdesc.o)
+ .comment       0x0000000000000038       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbdconfig.o)
+ .comment       0x0000000000000038       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbdesc.o)
+ .comment       0x0000000000000038       0x39 /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .comment       0x0000000000000038       0x39 /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+ .comment       0x0000000000000038       0x39 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .comment       0x0000000000000038       0x39 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .comment       0x0000000000000038       0x39 /opt/tivaware/driverlib/gcc/libdriver.a(systick.o)
+ .comment       0x0000000000000038       0x39 /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+ .comment       0x0000000000000038       0x39 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .comment       0x0000000000000038       0x39 /opt/tivaware/driverlib/gcc/libdriver.a(cpu.o)
+ .comment       0x0000000000000038       0x38 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-realloc.o)
+                                         0x39 (size before relaxing)
+ .comment       0x0000000000000070       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reallocr.o)
+ .comment       0x0000000000000070       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+ .comment       0x0000000000000070       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-freer.o)
+ .comment       0x0000000000000070       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-impure.o)
+ .comment       0x0000000000000070       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mallocr.o)
+ .comment       0x0000000000000070       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memmove.o)
+ .comment       0x0000000000000070       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mlock.o)
+ .comment       0x0000000000000070       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-sbrkr.o)
+ .comment       0x0000000000000070       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reent.o)
+ .comment       0x0000000000000070       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libnosys.a(sbrk.o)
+
+.ARM.attributes
+                0x0000000000000000       0x37
+ .ARM.attributes
+                0x0000000000000000       0x39 CMakeFiles/arm_main.axf.dir/arm_main.cpp.obj
+ .ARM.attributes
+                0x0000000000000039       0x39 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/startup_gcc.c.obj
+ .ARM.attributes
+                0x0000000000000072       0x39 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/time.cpp.obj
+ .ARM.attributes
+                0x00000000000000ab       0x39 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/tivac_hardware.cpp.obj
+ .ARM.attributes
+                0x00000000000000e4       0x39 CMakeFiles/arm_main.axf.dir/home/steven/Documents/rover_tiva/catkin_ws/build/arm/ros_lib/usb_serial_structs.c.obj
+ .ARM.attributes
+                0x000000000000011d       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbbuffer.o)
+ .ARM.attributes
+                0x0000000000000156       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbdcdc.o)
+ .ARM.attributes
+                0x000000000000018f       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbdenum.o)
+ .ARM.attributes
+                0x00000000000001c8       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbdhandler.o)
+ .ARM.attributes
+                0x0000000000000201       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbdma.o)
+ .ARM.attributes
+                0x000000000000023a       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbmode.o)
+ .ARM.attributes
+                0x0000000000000273       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbringbuf.o)
+ .ARM.attributes
+                0x00000000000002ac       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbtick.o)
+ .ARM.attributes
+                0x00000000000002e5       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbulpi.o)
+ .ARM.attributes
+                0x000000000000031e       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbdcdesc.o)
+ .ARM.attributes
+                0x0000000000000357       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbdconfig.o)
+ .ARM.attributes
+                0x0000000000000390       0x39 /opt/tivaware/usblib/gcc/libusb.a(usbdesc.o)
+ .ARM.attributes
+                0x00000000000003c9       0x39 /opt/tivaware/driverlib/gcc/libdriver.a(gpio.o)
+ .ARM.attributes
+                0x0000000000000402       0x39 /opt/tivaware/driverlib/gcc/libdriver.a(interrupt.o)
+ .ARM.attributes
+                0x000000000000043b       0x39 /opt/tivaware/driverlib/gcc/libdriver.a(pwm.o)
+ .ARM.attributes
+                0x0000000000000474       0x39 /opt/tivaware/driverlib/gcc/libdriver.a(sysctl.o)
+ .ARM.attributes
+                0x00000000000004ad       0x39 /opt/tivaware/driverlib/gcc/libdriver.a(systick.o)
+ .ARM.attributes
+                0x00000000000004e6       0x39 /opt/tivaware/driverlib/gcc/libdriver.a(udma.o)
+ .ARM.attributes
+                0x000000000000051f       0x39 /opt/tivaware/driverlib/gcc/libdriver.a(usb.o)
+ .ARM.attributes
+                0x0000000000000558       0x39 /opt/tivaware/driverlib/gcc/libdriver.a(cpu.o)
+ .ARM.attributes
+                0x0000000000000591       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x00000000000005b1       0x34 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-realloc.o)
+ .ARM.attributes
+                0x00000000000005e5       0x34 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reallocr.o)
+ .ARM.attributes
+                0x0000000000000619       0x34 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x000000000000064d       0x34 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-freer.o)
+ .ARM.attributes
+                0x0000000000000681       0x34 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x00000000000006b5       0x34 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mallocr.o)
+ .ARM.attributes
+                0x00000000000006e9       0x34 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memmove.o)
+ .ARM.attributes
+                0x000000000000071d       0x34 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mlock.o)
+ .ARM.attributes
+                0x0000000000000751       0x34 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-sbrkr.o)
+ .ARM.attributes
+                0x0000000000000785       0x34 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reent.o)
+ .ARM.attributes
+                0x00000000000007b9       0x34 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libnosys.a(sbrk.o)
+
+.debug_line     0x0000000000000000     0x122e
+ .debug_line    0x0000000000000000       0xbb /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memcpy.o)
+ .debug_line    0x00000000000000bb      0x15e /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-realloc.o)
+ .debug_line    0x0000000000000219      0x29d /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reallocr.o)
+ .debug_line    0x00000000000004b6       0xf5 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+ .debug_line    0x00000000000005ab      0x271 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-freer.o)
+ .debug_line    0x000000000000081c       0xf4 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-impure.o)
+ .debug_line    0x0000000000000910      0x38e /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mallocr.o)
+ .debug_line    0x0000000000000c9e      0x122 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memmove.o)
+ .debug_line    0x0000000000000dc0      0x112 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mlock.o)
+ .debug_line    0x0000000000000ed2      0x164 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-sbrkr.o)
+ .debug_line    0x0000000000001036      0x19d /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reent.o)
+ .debug_line    0x00000000000011d3       0x5b /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libnosys.a(sbrk.o)
+
+.debug_info     0x0000000000000000     0x56d1
+ .debug_info    0x0000000000000000       0xd5 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memcpy.o)
+ .debug_info    0x00000000000000d5      0x8e3 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-realloc.o)
+ .debug_info    0x00000000000009b8      0xcbc /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reallocr.o)
+ .debug_info    0x0000000000001674       0xb5 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+ .debug_info    0x0000000000001729      0xc1c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-freer.o)
+ .debug_info    0x0000000000002345      0x894 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-impure.o)
+ .debug_info    0x0000000000002bd9      0xd8b /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mallocr.o)
+ .debug_info    0x0000000000003964      0x131 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memmove.o)
+ .debug_info    0x0000000000003a95      0x8b4 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mlock.o)
+ .debug_info    0x0000000000004349      0x8f4 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-sbrkr.o)
+ .debug_info    0x0000000000004c3d      0x9fb /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reent.o)
+ .debug_info    0x0000000000005638       0x99 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libnosys.a(sbrk.o)
+
+.debug_abbrev   0x0000000000000000     0x1289
+ .debug_abbrev  0x0000000000000000       0x14 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memcpy.o)
+ .debug_abbrev  0x0000000000000014      0x1dc /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-realloc.o)
+ .debug_abbrev  0x00000000000001f0      0x260 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reallocr.o)
+ .debug_abbrev  0x0000000000000450       0x70 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+ .debug_abbrev  0x00000000000004c0      0x27b /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-freer.o)
+ .debug_abbrev  0x000000000000073b      0x180 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-impure.o)
+ .debug_abbrev  0x00000000000008bb      0x2ad /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mallocr.o)
+ .debug_abbrev  0x0000000000000b68       0xab /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memmove.o)
+ .debug_abbrev  0x0000000000000c13      0x19a /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mlock.o)
+ .debug_abbrev  0x0000000000000dad      0x1fd /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-sbrkr.o)
+ .debug_abbrev  0x0000000000000faa      0x25c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reent.o)
+ .debug_abbrev  0x0000000000001206       0x83 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libnosys.a(sbrk.o)
+
+.debug_aranges  0x0000000000000000      0x190
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memcpy.o)
+ .debug_aranges
+                0x0000000000000020       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-realloc.o)
+ .debug_aranges
+                0x0000000000000040       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reallocr.o)
+ .debug_aranges
+                0x0000000000000060       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+ .debug_aranges
+                0x0000000000000080       0x28 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-freer.o)
+ .debug_aranges
+                0x00000000000000a8       0x18 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-impure.o)
+ .debug_aranges
+                0x00000000000000c0       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mallocr.o)
+ .debug_aranges
+                0x00000000000000e0       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memmove.o)
+ .debug_aranges
+                0x0000000000000100       0x28 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mlock.o)
+ .debug_aranges
+                0x0000000000000128       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-sbrkr.o)
+ .debug_aranges
+                0x0000000000000148       0x28 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reent.o)
+ .debug_aranges
+                0x0000000000000170       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libnosys.a(sbrk.o)
+
+.debug_loc      0x0000000000000000     0x29b4
+ .debug_loc     0x0000000000000000       0x58 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-realloc.o)
+ .debug_loc     0x0000000000000058     0x1218 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reallocr.o)
+ .debug_loc     0x0000000000001270       0x21 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+ .debug_loc     0x0000000000001291      0x4fd /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-freer.o)
+ .debug_loc     0x000000000000178e      0xdc4 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mallocr.o)
+ .debug_loc     0x0000000000002552      0x2d7 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memmove.o)
+ .debug_loc     0x0000000000002829       0x4d /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-sbrkr.o)
+ .debug_loc     0x0000000000002876      0x11d /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reent.o)
+ .debug_loc     0x0000000000002993       0x21 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libnosys.a(sbrk.o)
+
+.debug_ranges   0x0000000000000000      0x268
+ .debug_ranges  0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-realloc.o)
+ .debug_ranges  0x0000000000000010      0x180 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reallocr.o)
+ .debug_ranges  0x0000000000000190       0x10 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+ .debug_ranges  0x00000000000001a0       0x18 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-freer.o)
+ .debug_ranges  0x00000000000001b8       0x50 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mallocr.o)
+ .debug_ranges  0x0000000000000208       0x10 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memmove.o)
+ .debug_ranges  0x0000000000000218       0x18 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mlock.o)
+ .debug_ranges  0x0000000000000230       0x10 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-sbrkr.o)
+ .debug_ranges  0x0000000000000240       0x18 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reent.o)
+ .debug_ranges  0x0000000000000258       0x10 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libnosys.a(sbrk.o)
+
+.debug_str      0x0000000000000000      0xc75
+ .debug_str     0x0000000000000000      0x56a /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-realloc.o)
+                                        0x5e1 (size before relaxing)
+ .debug_str     0x000000000000056a      0x119 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reallocr.o)
+                                        0x6bd (size before relaxing)
+ .debug_str     0x0000000000000683       0xaf /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+                                        0x218 (size before relaxing)
+ .debug_str     0x0000000000000732       0xe9 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-freer.o)
+                                        0x735 (size before relaxing)
+ .debug_str     0x000000000000081b       0xb8 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-impure.o)
+                                        0x5dc (size before relaxing)
+ .debug_str     0x00000000000008d3       0xc6 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mallocr.o)
+                                        0x7eb (size before relaxing)
+ .debug_str     0x0000000000000999       0xcd /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memmove.o)
+                                        0x23e (size before relaxing)
+ .debug_str     0x0000000000000a66       0x45 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mlock.o)
+                                        0x5e5 (size before relaxing)
+ .debug_str     0x0000000000000aab       0x3a /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-sbrkr.o)
+                                        0x5d3 (size before relaxing)
+ .debug_str     0x0000000000000ae5       0x5b /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reent.o)
+                                        0x5fb (size before relaxing)
+ .debug_str     0x0000000000000b40      0x135 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libnosys.a(sbrk.o)
+                                        0x14e (size before relaxing)
+
+.debug_frame    0x0000000000000000      0x270
+ .debug_frame   0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-realloc.o)
+ .debug_frame   0x0000000000000020       0x60 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reallocr.o)
+ .debug_frame   0x0000000000000080       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-strlen.o)
+ .debug_frame   0x00000000000000a0       0x74 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-freer.o)
+ .debug_frame   0x0000000000000114       0x58 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mallocr.o)
+ .debug_frame   0x000000000000016c       0x30 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-memmove.o)
+ .debug_frame   0x000000000000019c       0x30 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-mlock.o)
+ .debug_frame   0x00000000000001cc       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-sbrkr.o)
+ .debug_frame   0x00000000000001f8       0x58 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-reent.o)
+ .debug_frame   0x0000000000000250       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7e-m/fpu/libnosys.a(sbrk.o)
