@@ -70,6 +70,22 @@ uint8_t bdc_init(BDC bdc) {
 // Set motor velocity (+ve is CCW, -ve is CW, 0 is stop)
 uint8_t bdc_set_velocity(BDC bdc, int32_t velocity) {
 	//TODO write velocity set
+	//For now assume input between -1000 and 1000
+
+	if (velocity == 0) {
+		PWMOutputState(bdc.PWM_BASE_IN1, bdc.PWM_OUT_BIT_IN1, 0);
+	} else if (velocity > 0) {
+		PWMOutputState(bdc.PWM_BASE_IN1, bdc.PWM_OUT_BIT_IN1, 1);
+		GPIOPinWrite(bdc.GPIO_PORT_BASE_IN2, bdc.GPIO_PIN_IN2, bdc.GPIO_PIN_IN2);
+	} else {
+		PWMOutputState(bdc.PWM_BASE_IN1, bdc.PWM_OUT_BIT_IN1, 1);
+		GPIOPinWrite(bdc.GPIO_PORT_BASE_IN2, bdc.GPIO_PIN_IN2, 0);
+	}
+
+	PWMPulseWidthSet(bdc.PWM_BASE_IN1, bdc.PWM_OUT_BIT_IN1,
+			PWMGenPeriodGet(bdc.PWM_BASE_IN1, bdc.PWM_GEN_IN1)
+			* velocity / 1000);
+
 	return 0;
 }
 

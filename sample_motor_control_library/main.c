@@ -10,42 +10,42 @@ int main(void) {
 
 	// Initialize a motor
 	BDC motor1;
-	// IN1 - Speed Output
-	motor1.SYSCTL_PERIPH_PWM_IN1 = NULL;
-	motor1.SYSCTL_PERIPH_GPIO_IN1 = NULL;
-	motor1.GPIO_PWM_IN1 = NULL;
-	motor1.GPIO_PORT_BASE_IN1 = NULL;
-	motor1.GPIO_PIN_IN1 = NULL;
-	motor1.PWM_BASE_IN1 = NULL;
-	motor1.PWM_GEN_IN1 = NULL;
-	motor1.PWM_OUT_BIT_IN1 = NULL;
-	// IN2 - Direction Output
-	motor1.SYSCTL_PERIPH_GPIO_IN2 = NULL;
-	motor1.GPIO_PORT_BASE_IN2 = NULL;
-	motor1.GPIO_PIN_IN2 = NULL;
-	// nFAULT - Fault Status Input
-	motor1.SYSCTL_PERIPH_GPIO_nFAULT = NULL;
-	motor1.GPIO_PORT_BASE_nFAULT = NULL;
-	motor1.GPIO_PIN_nFAULT = NULL;
-	// nRESET - Reset Output
-	motor1.SYSCTL_PERIPH_GPIO_nRESET = NULL;
-	motor1.GPIO_PORT_BASE_nRESET = NULL;
-	motor1.GPIO_PIN_nRESET = NULL;
-	// BRAKE - Brake Output
-	motor1.SYSCTL_PERIPH_GPIO_BRAKE = NULL;
-	motor1.GPIO_PORT_BASE_BRAKE = NULL;
-	motor1.GPIO_PIN_BRAKE = NULL;
-	// CS - Current Sense Input
-	motor1.SYSCTL_PERIPH_ADC_CS = NULL;
-	motor1.SYSCTL_PERIPH_GPIO_CS = NULL;
-	motor1.GPIO_PORT_BASE_CS = NULL;
-	motor1.GPIO_PIN_CS = NULL;
-	motor1.ADC_BASE_CS = NULL;
-	motor1.ADC_CTL_CH_CS = NULL;
+	// IN1 - Speed Output PB6
+	motor1.SYSCTL_PERIPH_PWM_IN1 = SYSCTL_PERIPH_PWM0;
+	motor1.SYSCTL_PERIPH_GPIO_IN1 = SYSCTL_PERIPH_GPIOB;
+	motor1.GPIO_PWM_IN1 = GPIO_PB6_M0PWM0;
+	motor1.GPIO_PORT_BASE_IN1 = GPIO_PORTB_BASE;
+	motor1.GPIO_PIN_IN1 = GPIO_PIN_6;
+	motor1.PWM_BASE_IN1 = PWM0_BASE;
+	motor1.PWM_GEN_IN1 = PWM_GEN_0;
+	motor1.PWM_OUT_BIT_IN1 = PWM_OUT_0_BIT;
+	// IN2 - Direction Output PB7
+	motor1.SYSCTL_PERIPH_GPIO_IN2 = SYSCTL_PERIPH_GPIOB;
+	motor1.GPIO_PORT_BASE_IN2 = GPIO_PORTB_BASE;
+	motor1.GPIO_PIN_IN2 = GPIO_PIN_7;
+	// nFAULT - Fault Status Input PE3
+	motor1.SYSCTL_PERIPH_GPIO_nFAULT = SYSCTL_PERIPH_GPIOE;
+	motor1.GPIO_PORT_BASE_nFAULT = GPIO_PORTE_BASE;
+	motor1.GPIO_PIN_nFAULT = GPIO_PIN_3;
+	// nRESET - Reset Output PA1
+	motor1.SYSCTL_PERIPH_GPIO_nRESET = SYSCTL_PERIPH_GPIOA;
+	motor1.GPIO_PORT_BASE_nRESET = GPIO_PORTA_BASE;
+	motor1.GPIO_PIN_nRESET = GPIO_PIN_1;
+	// BRAKE - Brake Output PF3
+	motor1.SYSCTL_PERIPH_GPIO_BRAKE = SYSCTL_PERIPH_GPIOF;
+	motor1.GPIO_PORT_BASE_BRAKE = GPIO_PORTF_BASE;
+	motor1.GPIO_PIN_BRAKE = GPIO_PIN_3;
+	// CS - Current Sense Input PE1
+	motor1.SYSCTL_PERIPH_ADC_CS = SYSCTL_PERIPH_ADC0;
+	motor1.SYSCTL_PERIPH_GPIO_CS = SYSCTL_PERIPH_GPIOE;
+	motor1.GPIO_PORT_BASE_CS = GPIO_PORTE_BASE;
+	motor1.GPIO_PIN_CS = GPIO_PIN_1;
+	motor1.ADC_BASE_CS = ADC0_BASE;
+	motor1.ADC_CTL_CH_CS = ADC_CTL_CH2;
 
 	// Example usage...
 	bdc_init(motor1);
-	bdc_set_brake(motor1, 0);
-	bdc_set_enabled(motor1, 1);
+	bdc_set_velocity(motor1, 1000);
+	while(1){}
 	return 0;
 }
