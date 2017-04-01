@@ -77,10 +77,10 @@ typedef struct BDCs {
 } BDC;
 
 // Initialize all peripherals needed to interact with motor
-uint8_t bdc_init(BDC bdc);
+void bdc_init(BDC bdc);
 
 // Set motor velocity (+ve is CCW, -ve is CW, 0 is stop)
-uint8_t bdc_set_velocity(BDC bdc, int32_t velocity);
+void bdc_set_velocity(BDC bdc, int32_t velocity);
 
 // Read motor current
 uint32_t bdc_get_current(BDC bdc);

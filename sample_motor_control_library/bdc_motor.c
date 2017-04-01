@@ -12,7 +12,7 @@
 #include "bdc_motor.h"
 
 // Initialize all peripherals needed to interact with motor
-uint8_t bdc_init(BDC bdc) {
+void bdc_init(BDC bdc) {
 	//TODO Do we need to check if a peripheral is already enabled before
 	//     enabling it?
 	// PWM Config
@@ -63,20 +63,21 @@ uint8_t bdc_init(BDC bdc) {
 			| ADC_CTL_IE | ADC_CTL_END);
 	ADCSequenceEnable(bdc.ADC_BASE_CS, 3);
 	ADCIntClear(bdc.ADC_BASE_CS, 3);
-
-	return 0;
 }
 
 // Set motor velocity (+ve is CCW, -ve is CW, 0 is stop)
-uint8_t bdc_set_velocity(BDC bdc, int32_t velocity) {
+void bdc_set_velocity(BDC bdc, int32_t velocity) {
+	// Get the PWM period. Should be 4000 for a 20kHz PWM frequency
 	uint32_t pwm_period = PWMGenPeriodGet(bdc.PWM_BASE_IN1, bdc.PWM_GEN_IN1);
-
+	// Ensure that input stays in [-3999, 3999].
+	// PWM generation hardware does not work at 100% duty cycle
 	if(velocity >= pwm_period) {
 		velocity = pwm_period - 1;
 	} else if (velocity <= -1 * pwm_period) {
 		velocity = pwm_period + 1;
 	}
-
+	// If velocity is 0, disable PWM gen
+	// Otherwise enable it and set direction pin
 	if (velocity == 0) {
 		PWMOutputState(bdc.PWM_BASE_IN1, bdc.PWM_OUT_BIT_IN1, 0);
 	} else if (velocity > 0) {
@@ -86,10 +87,8 @@ uint8_t bdc_set_velocity(BDC bdc, int32_t velocity) {
 		PWMOutputState(bdc.PWM_BASE_IN1, bdc.PWM_OUT_BIT_IN1, bdc.PWM_OUT_BIT_IN1);
 		GPIOPinWrite(bdc.GPIO_PORT_BASE_IN2, bdc.GPIO_PIN_IN2, 0);
 	}
-
+	// No duty cycle scaling is needed, since input is directly the duty cycle
 	PWMPulseWidthSet(bdc.PWM_BASE_IN1, bdc.PWM_OUT_IN1, abs(velocity));
-
-	return 0;
 }
 
 // Read motor current
