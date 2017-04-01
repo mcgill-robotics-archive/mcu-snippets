@@ -50,6 +50,7 @@ typedef struct BDCs {
 	uint32_t PWM_BASE_IN1;
 	uint32_t PWM_GEN_IN1;
 	uint32_t PWM_OUT_BIT_IN1;
+	uint32_t PWM_OUT_IN1;
 	// IN2 - Direction Output
 	uint32_t SYSCTL_PERIPH_GPIO_IN2;
 	uint32_t GPIO_PORT_BASE_IN2;

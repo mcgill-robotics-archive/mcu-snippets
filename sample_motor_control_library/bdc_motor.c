@@ -17,7 +17,7 @@ uint8_t bdc_init(BDC bdc) {
 	//     enabling it?
 	// PWM Config
 	//TODO Change resolution if needed
-	SysCtlPWMClockSet(SYSCTL_PWMDIV_8);
+	SysCtlPWMClockSet(SYSCTL_PWMDIV_1);
 	SysCtlPeripheralEnable(bdc.SYSCTL_PERIPH_PWM_IN1);
 	while(!SysCtlPeripheralReady(bdc.SYSCTL_PERIPH_PWM_IN1)){}
 	SysCtlPeripheralEnable(bdc.SYSCTL_PERIPH_GPIO_IN1);
@@ -26,7 +26,7 @@ uint8_t bdc_init(BDC bdc) {
 	GPIOPinTypePWM(bdc.GPIO_PORT_BASE_IN1, bdc.GPIO_PIN_IN1);
 	PWMGenConfigure(bdc.PWM_BASE_IN1, bdc.PWM_GEN_IN1, PWM_GEN_MODE_UP_DOWN |
 	                    PWM_GEN_MODE_NO_SYNC);
-	PWMGenPeriodSet(bdc.PWM_BASE_IN1, bdc.PWM_GEN_IN1, 40000);
+	PWMGenPeriodSet(bdc.PWM_BASE_IN1, bdc.PWM_GEN_IN1, 4000);
 	PWMOutputState(bdc.PWM_BASE_IN1, bdc.PWM_OUT_BIT_IN1, true);
 	PWMGenEnable(bdc.PWM_BASE_IN1, bdc.PWM_GEN_IN1);
 
@@ -69,22 +69,25 @@ uint8_t bdc_init(BDC bdc) {
 
 // Set motor velocity (+ve is CCW, -ve is CW, 0 is stop)
 uint8_t bdc_set_velocity(BDC bdc, int32_t velocity) {
-	//TODO write velocity set
-	//For now assume input between -1000 and 1000
+	uint32_t pwm_period = PWMGenPeriodGet(bdc.PWM_BASE_IN1, bdc.PWM_GEN_IN1);
+
+	if(velocity >= pwm_period) {
+		velocity = pwm_period - 1;
+	} else if (velocity <= -1 * pwm_period) {
+		velocity = pwm_period + 1;
+	}
 
 	if (velocity == 0) {
 		PWMOutputState(bdc.PWM_BASE_IN1, bdc.PWM_OUT_BIT_IN1, 0);
 	} else if (velocity > 0) {
-		PWMOutputState(bdc.PWM_BASE_IN1, bdc.PWM_OUT_BIT_IN1, 1);
+		PWMOutputState(bdc.PWM_BASE_IN1, bdc.PWM_OUT_BIT_IN1, bdc.PWM_OUT_BIT_IN1);
 		GPIOPinWrite(bdc.GPIO_PORT_BASE_IN2, bdc.GPIO_PIN_IN2, bdc.GPIO_PIN_IN2);
 	} else {
-		PWMOutputState(bdc.PWM_BASE_IN1, bdc.PWM_OUT_BIT_IN1, 1);
+		PWMOutputState(bdc.PWM_BASE_IN1, bdc.PWM_OUT_BIT_IN1, bdc.PWM_OUT_BIT_IN1);
 		GPIOPinWrite(bdc.GPIO_PORT_BASE_IN2, bdc.GPIO_PIN_IN2, 0);
 	}
 
-	PWMPulseWidthSet(bdc.PWM_BASE_IN1, bdc.PWM_OUT_BIT_IN1,
-			PWMGenPeriodGet(bdc.PWM_BASE_IN1, bdc.PWM_GEN_IN1)
-			* velocity / 1000);
+	PWMPulseWidthSet(bdc.PWM_BASE_IN1, bdc.PWM_OUT_IN1, abs(velocity));
 
 	return 0;
 }

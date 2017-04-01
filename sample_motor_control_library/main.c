@@ -19,6 +19,7 @@ int main(void) {
 	motor1.PWM_BASE_IN1 = PWM0_BASE;
 	motor1.PWM_GEN_IN1 = PWM_GEN_0;
 	motor1.PWM_OUT_BIT_IN1 = PWM_OUT_0_BIT;
+	motor1.PWM_OUT_IN1 = PWM_OUT_0;
 	// IN2 - Direction Output PB7
 	motor1.SYSCTL_PERIPH_GPIO_IN2 = SYSCTL_PERIPH_GPIOB;
 	motor1.GPIO_PORT_BASE_IN2 = GPIO_PORTB_BASE;
@@ -46,6 +47,7 @@ int main(void) {
 	// Example usage...
 	bdc_init(motor1);
 	bdc_set_velocity(motor1, 1000);
+
 	while(1){}
 	return 0;
 }
