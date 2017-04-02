@@ -1,0 +1,16 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/lib64/ccache/arm-none-eabi-gcc 
+Build flags: -mthumb;-mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-std=gnu99;-Os;-ffunction-sections;-fdata-sections;-MD;-Wall;-pedantic;-fsingle-precision-constant
+Id flags: 
+
+The output was:
+1
+/usr/lib/gcc/arm-none-eabi/6.2.0/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc.a(lib_a-exit.o): In function `exit':
+/builddir/build/BUILD/newlib-2.4.0/build-newlib/arm-none-eabi/armv7e-m/fpu/newlib/libc/stdlib/../../../../../../../newlib/libc/stdlib/exit.c:70: undefined reference to `_exit'
+collect2: error: ld returned 1 exit status
+
+
+The C compiler identification could not be found in "/home/steven/Documents/Robotics/tiva_test/catkin_ws/build/arm/arm_main/CMakeFiles/3.6.2/CompilerIdC/CMakeCCompilerId.d"
+
+The CXX compiler identification could not be found in "/home/steven/Documents/Robotics/tiva_test/catkin_ws/build/arm/arm_main/CMakeFiles/3.6.2/CompilerIdCXX/CMakeCXXCompilerId.d"
+

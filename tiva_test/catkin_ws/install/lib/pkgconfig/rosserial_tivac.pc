@@ -1,0 +1,8 @@
+prefix=/home/steven/Documents/Robotics/tiva_test/catkin_ws/install
+
+Name: rosserial_tivac
+Description: Description of rosserial_tivac
+Version: 0.7.5
+Cflags: 
+Libs: -L/home/steven/Documents/Robotics/tiva_test/catkin_ws/install/lib 
+Requires: 
