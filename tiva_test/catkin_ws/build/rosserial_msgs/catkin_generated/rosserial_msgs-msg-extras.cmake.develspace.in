@@ -1,2 +1,0 @@
-set(rosserial_msgs_MESSAGE_FILES "/home/steven/Documents/Robotics/tiva_test/catkin_ws/src/rosserial_msgs/msg/Log.msg;/home/steven/Documents/Robotics/tiva_test/catkin_ws/src/rosserial_msgs/msg/TopicInfo.msg")
-set(rosserial_msgs_SERVICE_FILES "/home/steven/Documents/Robotics/tiva_test/catkin_ws/src/rosserial_msgs/srv/RequestParam.srv;/home/steven/Documents/Robotics/tiva_test/catkin_ws/src/rosserial_msgs/srv/RequestMessageInfo.srv;/home/steven/Documents/Robotics/tiva_test/catkin_ws/src/rosserial_msgs/srv/RequestServiceInfo.srv")

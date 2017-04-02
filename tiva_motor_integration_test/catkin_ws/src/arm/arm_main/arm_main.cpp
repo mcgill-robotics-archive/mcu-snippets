@@ -23,8 +23,7 @@ ros::NodeHandle nh;
 volatile int32_t vel1 = 0;
 
 void messageCb(const std_msgs::Int32& msg) {
-//    vel1 = msg.data;
-      vel1 += 1000;
+  vel1 = msg.data;
 }
 
 ros::Subscriber<std_msgs::Int32> sub("motor_test_1", &messageCb);
@@ -77,8 +76,8 @@ int main(void) {
 
   while (1)
   {
+    bdc_set_velocity(motor1, 2000);
     nh.spinOnce();
-    bdc_set_velocity(motor1, vel1);
-    //nh.getHardware()->delay(100);
+    nh.getHardware()->delay(100);
   }
 }
