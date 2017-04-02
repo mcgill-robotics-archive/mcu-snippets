@@ -76,7 +76,7 @@ int main(void) {
 
   while (1)
   {
-    bdc_set_velocity(motor1, 2000);
+    bdc_set_velocity(motor1, vel1);
     nh.spinOnce();
     nh.getHardware()->delay(100);
   }

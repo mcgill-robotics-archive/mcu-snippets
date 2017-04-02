@@ -67,28 +67,32 @@ void bdc_init(BDC bdc) {
 
 // Set motor velocity (+ve is CCW, -ve is CW, 0 is stop)
 void bdc_set_velocity(BDC bdc, int32_t velocity) {
-	// Get the PWM period. Should be 4000 for a 20kHz PWM frequency
-	uint32_t pwm_period = PWMGenPeriodGet(bdc.PWM_BASE_IN1, bdc.PWM_GEN_IN1);
-	// Ensure that input stays in [-3999, 3999].
-	// PWM generation hardware does not work at 100% duty cycle
-	if(velocity >= pwm_period) {
-		velocity = pwm_period - 1;
-	} else if (velocity <= -1 * pwm_period) {
-		velocity = pwm_period + 1;
-	}
+	// Ensure that input stays in [-3999, -2] U [2, 3999] (PWM period is 4000)
+	// PWM generation hardware does not work at 0% or 100% duty cycle
+	int8_t sign = 1;
+    if (velocity >= 0) {
+        sign = 1;
+    } else {
+        sign = -1;
+    }
+    if(abs(velocity) < 2) {
+        velocity = 0;
+    } else if(abs(velocity >= 4000)) {
+        velocity = sign * 3999;
+    }
 	// If velocity is 0, disable PWM gen
 	// Otherwise enable it and set direction pin
 	if (velocity == 0) {
 		PWMOutputState(bdc.PWM_BASE_IN1, bdc.PWM_OUT_BIT_IN1, 0);
-	} else if (velocity > 0) {
-		PWMOutputState(bdc.PWM_BASE_IN1, bdc.PWM_OUT_BIT_IN1, bdc.PWM_OUT_BIT_IN1);
+	} else if (sign == 1) {
+        PWMOutputState(bdc.PWM_BASE_IN1, bdc.PWM_OUT_BIT_IN1, bdc.PWM_OUT_BIT_IN1);
 		GPIOPinWrite(bdc.GPIO_PORT_BASE_IN2, bdc.GPIO_PIN_IN2, bdc.GPIO_PIN_IN2);
 	} else {
 		PWMOutputState(bdc.PWM_BASE_IN1, bdc.PWM_OUT_BIT_IN1, bdc.PWM_OUT_BIT_IN1);
 		GPIOPinWrite(bdc.GPIO_PORT_BASE_IN2, bdc.GPIO_PIN_IN2, 0);
 	}
 	// No duty cycle scaling is needed, since input is directly the duty cycle
-	PWMPulseWidthSet(bdc.PWM_BASE_IN1, bdc.PWM_OUT_IN1, abs(velocity));
+    PWMPulseWidthSet(bdc.PWM_BASE_IN1, bdc.PWM_OUT_IN1, abs(velocity));
 }
 
 // Read motor current
