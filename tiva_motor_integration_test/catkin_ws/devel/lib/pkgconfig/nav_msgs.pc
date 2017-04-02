@@ -1,0 +1,8 @@
+prefix=/home/steven/Documents/Robotics/tiva_test/catkin_ws/devel
+
+Name: nav_msgs
+Description: Description of nav_msgs
+Version: 1.12.5
+Cflags: -I/home/steven/Documents/Robotics/tiva_test/catkin_ws/devel/include
+Libs: -L/home/steven/Documents/Robotics/tiva_test/catkin_ws/devel/lib 
+Requires: geometry_msgs message_runtime std_msgs actionlib_msgs
