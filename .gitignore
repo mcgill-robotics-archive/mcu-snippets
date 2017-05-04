@@ -1,4 +1,7 @@
 */Debug/
+*/build/
+*/devel/
+*/install/
 */.settings/
 */.launches/
 */targetConfigs/
