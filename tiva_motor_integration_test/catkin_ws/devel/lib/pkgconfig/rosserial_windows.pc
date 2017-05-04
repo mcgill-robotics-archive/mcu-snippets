@@ -1,8 +1,0 @@
-prefix=/home/steven/Documents/Robotics/tiva_test/catkin_ws/devel
-
-Name: rosserial_windows
-Description: Description of rosserial_windows
-Version: 0.7.6
-Cflags: 
-Libs: -L/home/steven/Documents/Robotics/tiva_test/catkin_ws/devel/lib 
-Requires: 

@@ -1,6 +1,7 @@
 */Debug/
-*/build/
-*/devel/
+
+*/build/*
+*/devel/*
 */install/
 */.settings/
 */.launches/

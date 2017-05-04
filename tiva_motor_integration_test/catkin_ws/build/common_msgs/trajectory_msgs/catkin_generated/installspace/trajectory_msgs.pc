@@ -1,8 +1,0 @@
-prefix=/home/steven/Documents/Robotics/tiva_test/catkin_ws/install
-
-Name: trajectory_msgs
-Description: Description of trajectory_msgs
-Version: 1.12.5
-Cflags: -I/home/steven/Documents/Robotics/tiva_test/catkin_ws/install/include
-Libs: -L/home/steven/Documents/Robotics/tiva_test/catkin_ws/install/lib 
-Requires: message_runtime std_msgs geometry_msgs

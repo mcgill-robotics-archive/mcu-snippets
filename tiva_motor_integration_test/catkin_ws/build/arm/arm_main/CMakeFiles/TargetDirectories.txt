@@ -1,8 +1,0 @@
-/home/steven/Documents/Robotics/tiva_test/catkin_ws/build/arm/arm_main/CMakeFiles/edit_cache.dir
-/home/steven/Documents/Robotics/tiva_test/catkin_ws/build/arm/arm_main/CMakeFiles/flash.dir
-/home/steven/Documents/Robotics/tiva_test/catkin_ws/build/arm/arm_main/CMakeFiles/size.dir
-/home/steven/Documents/Robotics/tiva_test/catkin_ws/build/arm/arm_main/CMakeFiles/build_driverlib.dir
-/home/steven/Documents/Robotics/tiva_test/catkin_ws/build/arm/arm_main/CMakeFiles/rebuild_cache.dir
-/home/steven/Documents/Robotics/tiva_test/catkin_ws/build/arm/arm_main/CMakeFiles/arm_main.axf.dir
-/home/steven/Documents/Robotics/tiva_test/catkin_ws/build/arm/arm_main/CMakeFiles/build_usblib.dir
-/home/steven/Documents/Robotics/tiva_test/catkin_ws/build/arm/arm_main/CMakeFiles/dump.dir
