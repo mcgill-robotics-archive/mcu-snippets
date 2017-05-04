@@ -1,6 +1,9 @@
 #include "CUI_encoder.h"
 
 int main(void) {
+    uint32_t CUI_position;
+    uint32_t CUI_velocity;
+    int32_t CUI_direction;
     uint32_t ui32SysClkFreq= SysCtlFreqSet((SYSCTL_XTAL_25MHZ|SYSCTL_OSC_MAIN | SYSCTL_USE_PLL | SYSCTL_CFG_VCO_480), 120000000);
     CUI_inc_encoder cui1;
 
@@ -20,9 +23,9 @@ int main(void) {
     
     CUI_encoder_init(cui1);
     while (1){
-	getDirection(cui1);
-	getVelocity(cui1);
-	getPosition(cui1);
+	    CUI_direction= getDirection(cui1);
+	    CUI_velocity= getVelocity(cui1);
+	    CUI_position=getPosition(cui1);
     }
 
 }
