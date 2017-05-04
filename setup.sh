@@ -39,5 +39,11 @@ if [[ ! -d ${ROBOTIC_PATH}/tivaware/ ]]; then
 fi
 
 echo "Installing rosserial and rosserial_tivac from ROS repositories..."
-sudo apt-get install ros-kinetic-rosserial ros-kinetic-rosserial-msgs ros-kinetic-rosserial-client ros-kinetic-rosserial-python ros-kinetic-rosserial-tivac
+sudo apt-get install ros-kinetic-rosserial ros-kinetic-rosserial-msgs ros-kinetic-rosserial-client ros-kinetic-rosserial-python
+
+if [[ -d opt/ros/kinetic/share/rosserial_tivac ]]; then
+    cd opt/ros/kinetic/share
+    rm -rf rosserial_tivac
+fi
+git clone -qq https://github.com/vmatos/rosserial_tivac.git
 echo "Done"
