@@ -1,11 +1,12 @@
-#include "CUI_encoder.h"
+#include "main.h"
+
 
 int main(void) {
     uint32_t CUI_position;
     uint32_t CUI_velocity;
     int32_t CUI_direction;
-    uint32_t ui32SysClkFreq= SysCtlFreqSet((SYSCTL_XTAL_25MHZ|SYSCTL_OSC_MAIN | SYSCTL_USE_PLL | SYSCTL_CFG_VCO_480), 120000000);
-    CUI_inc_encoder cui1;
+    uint32_t ui32SysClkFreq= SysCtlClockFreqSet((SYSCTL_XTAL_25MHZ|SYSCTL_OSC_MAIN | SYSCTL_USE_PLL | SYSCTL_CFG_VCO_480), 120000000);
+    CUI_encoder cui1;
 
     cui1.PHA_GPIO_PIN= GPIO_PIN_6;
     cui1.PHB_GPIO_PIN= GPIO_PIN_7;
@@ -17,15 +18,18 @@ int main(void) {
     cui1.QEI_GPIO_P_PHB= GPIO_PD7_PHB0;
     cui1.QEI_GPIO_P_IDX= GPIO_PD3_IDX0;
 
+    cui1.QEI_SYSCTL_PERIPH_QEI= SYSCTL_PERIPH_QEI0;
     cui1.QEI_GPIO_PORT_BASE= GPIO_PORTD_BASE;
     cui1.QEI_BASE= QEI0_BASE;
     cui1.QEI_VELDIV= QEI_VELDIV_1;
     
     CUI_encoder_init(cui1);
+
     while (1){
 	    CUI_direction= getDirection(cui1);
 	    CUI_velocity= getVelocity(cui1);
 	    CUI_position=getPosition(cui1);
-    }
 
+    }
 }
+

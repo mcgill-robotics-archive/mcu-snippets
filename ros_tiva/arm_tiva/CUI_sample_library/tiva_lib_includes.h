@@ -2,8 +2,10 @@
  *                          TIVA LIBRARY includes    			               *
  ******************************************************************************/
 
-#ifndef tiva_lib_includes_h
-#define tiva_lib_includes_h
+
+
+#ifndef _TIVA_LIB_INCLUDES_H_
+#define _TIVA_LIB_INCLUDES_H_
 
 //Include
 #include <stdarg.h>
@@ -37,10 +39,8 @@
 #include "driverlib/sysctl.h"
 #include "driverlib/systick.h"
 #include "driverlib/timer.h"
-#include "driverlib/uart.h"
-#include "driverlib/uart.c"
 
 #include "utils/uartstdio.h"
-
-
 #endif
+
+
